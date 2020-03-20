@@ -1,0 +1,310 @@
+html{
+	font-family:sans-serif;
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%
+}
+
+
+body{
+	margin:0;
+			font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+			font-size:14px;
+			line-height:1.42857143;
+			color:#333;
+			background-color:#fff
+}
+
+
+
+a{
+	color:#337ab7;text-decoration:none
+}
+
+
+h1{
+	font-size:36px
+}
+
+h2{
+	font-size:30px
+}
+
+h3{
+	font-size:24px
+}
+
+h4{
+	font-size:18px
+}
+
+h5{
+	font-size:14px
+} 
+
+h6{
+	font-size:12px
+}
+
+p{
+	margin:0 0 10px
+}
+
+
+/* ----- */
+
+th{
+	text-align:left
+}
+
+	
+.table{
+	width:100%;
+	max-width:100%;
+	margin-bottom:20px
+}
+
+.form-group{
+	margin-bottom:15px
+}
+
+.dropdown{
+	position:relative
+}
+
+
+.breadcrumb>li{
+	display:inline-block
+}
+
+.breadcrumb>li+li:before{
+	padding:0 5px;
+	color:#ccc;
+	content:"/\00a0"
+}
+
+.container{
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto
+}
+
+.container{
+	width:750px
+}
+
+.container{
+	width:970px
+}
+
+.container{
+	width:1170px
+}
+
+.row{
+	margin-right:-15px;margin-left:-15px
+}
+
+.container-fluid:after,.container-fluid:before,.container:after,.container:before,
+.row:after,.row:before{
+	display:table;content:" "
+}
+
+
+.container-fluid:after,.container:after,
+.row:after{
+	clear:both
+}
+
+
+/* alle kollomen hieronder. -> xs -> sm -> md ------ 1,10,11,2,20,21 etc.
+Alles is een block: 1:1:1:1 v 3:3:3:3 v w:r:l:ml;
+*/
+
+
+.col-xs-6,
+.col-sm-6,
+.col-md-12,.col-md-3,.col-md-4,.col-md-6,.col-md-9{
+	position:relative;
+	min-height:1px;
+	padding-right:15px;
+	padding-left:15px
+}
+
+.col-xs-6
+{
+	float:left
+}
+
+
+/* @media */
+
+
+@media (min-width:768px){
+	.lead{
+		font-size:21px
+	}
+
+	.container{
+		width:750px
+	}
+}
+
+
+@media (min-width:992px){
+	.container{
+		width:970px
+	}
+}
+
+@media (min-width:1200px){
+	.container{
+		width:1170px
+	}
+}
+
+@media (min-width:768px){
+	.col-sm-6{
+		float:left;
+	}
+
+		.col-sm-6{
+			width:50%;
+		}
+
+		.col-sm-pull-6{
+			right:50%;
+		}
+
+		.col-sm-push-6{
+			left:50%;
+		}
+
+		.col-sm-offset-6{
+			margin-left:50%;
+		}
+}
+
+
+ /* Martijn's PC */
+
+
+@media (min-width:992px){
+	.col-md-12,.col-md-3,.col-md-4,.col-md-6,.col.md-9{
+		float:left
+	}
+
+	.col-md-12{
+		width:100%
+	}
+
+	.col-md-pull-12{
+		right:100%
+	}
+
+	.col-md-push-12{
+		left:100%
+	}
+
+	.col-md-offset-12{
+		margin-left:100%
+	}
+
+
+	.col-md-9{
+		width:75%
+	}
+
+	.col-md-pull-9{
+		right:75%
+	}
+
+	.col-md-push-9{
+		left:75%
+	}
+
+	.col-mid-offset-9{
+		margin-left:75%
+	}
+
+
+
+	.col-md-6{
+		width:50%
+	}
+
+	.col-md-pull-6{
+		right:50%
+	}
+
+	.col-md-push-6{
+		left:50%
+	}
+
+	.col-md-offset-6{
+		margin-left:50%
+	}
+
+
+
+	.col-md-4{
+		width:33.33333333%
+	}
+
+	.col-md-pull-4{
+		right:33.33333333%
+	}
+
+	.col-md-push-4{
+		left:33.33333333%
+	}
+
+	.col-md-offset-4{
+		margin-left:33.33333333%
+	}
+
+
+
+	.col-md-3{
+		width:23%
+	}
+
+	.col-md-pull-3{
+		right:23%
+	}
+
+	.col-md-push-3{
+		left:23%
+	}
+
+	.col-md-offset-3{
+		margin-left:10%
+	}
+}
+
+
+ /* EINDE Martijn's PC */
+
+
+ /* EINDE @media */
+
+
+*{
+	-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box
+}
+
+	.col-md-4{
+		width:33.33333333%
+	}
+
+	.col-md-pull-4{
+		right:33.33333333%
+	}
+
+	.col-md-push-4{
+		left:33.33333333%
+	}
+
+	.col-md-offset-4{
+		margin-left:33.33333333%
+	}

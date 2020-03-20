@@ -1,0 +1,123 @@
+@font-face{
+	font-family:'FontAwesome';
+	src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') 
+		format('embedded-opentype'),
+				url('../fonts/fontawesome-webfont.ttf?v=4.7.0')
+					format('truetype');
+	font-weight:normal;
+	font-style:normal
+}
+
+
+.fa{display:inline-block;
+	font:normal normal normal 14px/1 FontAwesome;
+	font-size:inherit;text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale
+}
+
+.pull-right{
+	float:right
+}
+
+.pull-left{
+	float:left
+}
+
+/* FontAwesome icons */
+
+.fa-angle-right:before{
+	content:"\f105"
+}
+
+.fa-arrow-circle-right:before{
+	content:"\f0a9"
+}
+
+.fa-bars:before{
+	content:"\f0c9"
+}
+
+.fa-cash-register:before{
+	content:"\f788"
+}
+
+.fa-caret-down:before{
+	content:"\f0d7"
+}
+
+.fa-caret-right:before{
+	content:"\f0da"
+}
+
+.fa-check:before{
+	content:"\f00c"
+}
+
+.fa-close:before{
+	content:"\f00d"
+}
+
+.fa-envelope:before{
+	content:"\f0e0"
+}
+
+.fa-exchange:before{
+	content:"\f0ec"
+}
+
+.fa-facebook:before{
+	content:"\f09a"
+}
+
+.fa-heart:before{
+	content:"\f004"
+}
+
+.fa-heart-o:before{
+	content:"\f08a"
+}
+
+.fa-instagram:before{
+	content:"\f16d"
+}
+
+.fa-list:before{
+	content:"\f03a"
+}
+
+.fa-search-plus:before{
+	content:"\f00e"
+}
+
+.fa-share-alt:before{
+	content:"\f1e0"
+}
+
+.fa-shopping-cart:before{
+	content:"\f07a"
+}
+
+.fa-star:before{
+	content:"\f005"
+}
+
+.fa-star-o:before{
+	content:"\f006"
+}
+
+.fa-trash:before{
+	content:"\f1f8"
+}
+
+.fa-unlock-alt:before{
+	content:"\f13e"
+}
+
+.fa-user-o:before{
+	content:"\f2c0"
+}
+
+.fa-user-plus:before{
+	content:"\f234"
+}

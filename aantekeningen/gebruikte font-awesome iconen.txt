@@ -1,0 +1,23 @@
+•	angle-right		
+•	arrow-circle-right	
+•	bars			
+•	caret-down		
+•	caret-right		
+•	check			
+•	close			
+•	envelope		
+•	exchange		
+•	facebook		
+•	heart			
+•	heart-o			
+•	instagram		
+•	list			
+•	search-plus		
+•	share-alt		
+•	shopping-cart	
+•	star			
+•	star-o empty		
+•	trash			
+•	unlock-alt		
+•	user-o			
+•	user-plus		

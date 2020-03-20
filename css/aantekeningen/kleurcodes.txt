@@ -1,0 +1,74 @@
+Hex codes kleuren:
+
+#000000 = zwart
+#050606 = zacht zwart
+#0C0F0F = zachter zwart
+
+#C2B280 = ecru
+#9B8E66 = donkerder ecru
+
+#F5F5DC = beige
+#C4C4B0 = donkerder beige
+
+#40E0D0 = turquoise
+#40E0D0 = lichter turqouise
+
+
+`----------------
+
+html{
+	font-family:sans-serif;
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%
+}
+
+
+body{
+	margin:0
+		
+		font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size:14px;
+		line-height:1.42857143;
+		color:#333;
+		background-color:#fff
+
+}
+
+
+a{
+	color:#337ab7;text-decoration:none
+}
+
+
+h1{
+	font-size:36px
+}
+
+h2{
+	font-size:30px
+}
+
+h3{
+	font-size:24px
+}
+
+h4{
+	font-size:18px
+}
+h5{
+	font-size:14px
+} 
+
+h6{
+	font-size:12px
+}
+	p{margin:0 0 10px}
+
+
+*{
+	-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box
+}
+
+*{
+	-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box
+}
