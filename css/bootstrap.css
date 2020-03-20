@@ -169,19 +169,19 @@ Alles is een block: 1:1:1:1 v 3:3:3:3 v w:r:l:ml;
 	}
 
 		.col-sm-6{
-			width:50%;
+			width:100%;
 		}
 
 		.col-sm-pull-6{
-			right:50%;
+			right:100%;
 		}
 
 		.col-sm-push-6{
-			left:50%;
+			left:100%;
 		}
 
 		.col-sm-offset-6{
-			margin-left:50%;
+			margin-left:100%;
 		}
 }
 
@@ -266,19 +266,19 @@ Alles is een block: 1:1:1:1 v 3:3:3:3 v w:r:l:ml;
 
 
 	.col-md-3{
-		width:23%
+		width:25%
 	}
 
 	.col-md-pull-3{
-		right:23%
+		right:25%
 	}
 
 	.col-md-push-3{
-		left:23%
+		left:25%
 	}
 
 	.col-md-offset-3{
-		margin-left:10%
+		margin-left:25%
 	}
 }
 
