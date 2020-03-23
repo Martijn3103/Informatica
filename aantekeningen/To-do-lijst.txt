@@ -17,3 +17,4 @@ Wat moet er nog gebeuren aan ons informatica-eindproject?
 - html-pagina's aan elkaar linken
 - sterretjes toevoegen aan de pagina's die klikbaar zijn
 - alles grondig controleren (fouten m.b.t. kleuren, taalgebruik, is het simpel genoeg (geloofwaardig)?, e.d.)
+- Pagina titles veranderen bij iedere pagina  
