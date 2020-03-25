@@ -2,12 +2,12 @@ Wat moet er nog gebeuren aan ons informatica-eindproject?
 
 - css-classes aanpassen en deze ook in de html bestanden veranderen
 - 3/4 individuele productpagina's maken
-	- Armband moon
+	- Armband moon 					(alleen beschrijving)
 	- Armband l,l,l
-	- Ketting/ring/etc
+	- Ketting/ring/etc 				(alleen beschrijving)
 	- Ketting/ring/etc
 
-- 1/2 productlijst-pagina's maken
+- 1/2 productlijst-pagina's maken	(alleen links erachter)
 - javascript versimpelen
 - php
 	- werkende webshop
