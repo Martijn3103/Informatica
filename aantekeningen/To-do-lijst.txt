@@ -1,23 +1,17 @@
 Wat moet er nog gebeuren aan ons informatica-eindproject?
 
 - css-classes aanpassen en deze ook in de html bestanden veranderen
-- 3/4 individuele productpagina's maken
-	- Armband moon 					(alleen beschrijving)
-	- Armband l,l,l
-	- Ketting/ring/etc 				(alleen beschrijving)
-	- Ketting/ring/etc
 
-- 1/2 productlijst-pagina's maken	(alleen links erachter)
 - javascript versimpelen
 - php
 	- werkende webshop
 	- werkend inlogsysteem
 	- werkende nieuwsbrief
 
-- html-pagina's aan elkaar linken
-- sterretjes toevoegen aan de pagina's die klikbaar zijn
+- beschrijvingen aan producten toevoegen
+
 - alles grondig controleren (fouten m.b.t. kleuren, taalgebruik, is het simpel genoeg (geloofwaardig)?, e.d.)
-- Pagina titles veranderen bij iedere pagina  
+
 
 
 
