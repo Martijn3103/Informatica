@@ -573,6 +573,9 @@
 		<!-- /container -->
 	</footer>
 	<!-- /footer -->
+	<?php
+		echo "test";
+	?>
 
 
 	<!-- jQuery -->
