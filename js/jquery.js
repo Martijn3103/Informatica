@@ -3,7 +3,9 @@
         if (!a.document) throw new Error("jQuery requires a window with a document");
         return b(a)
     } : b(a)
-}("undefined" != typeof window ? window : this, function(a, b) {
+}
+
+("undefined" != typeof window ? window : this, function(a, b) {
     var c = [],
         d = a.document,
         e = c.slice,
@@ -168,11 +170,17 @@
         i["[object " + b + "]"] = b.toLowerCase()
     });
 
+
+
     function s(a) {
         var b = !!a && "length" in a && a.length,
             c = n.type(a);
         return "function" === c || n.isWindow(a) ? !1 : "array" === c || 0 === b || "number" == typeof b && b > 0 && b - 1 in a
     }
+
+
+
+
     var t = function(a) {
         var b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u = "sizzle" + 1 * new Date,
             v = a.document,
@@ -1369,23 +1377,7 @@
             return a = b || a, "none" === n.css(a, "display") || !n.contains(a.ownerDocument, a)
         };
 
-    function W(a, b, c, d) {
-        var e, f = 1,
-            g = 20,
-            h = d ? function() {
-                return d.cur()
-            } : function() {
-                return n.css(a, b, "")
-            },
-            i = h(),
-            j = c && c[3] || (n.cssNumber[b] ? "" : "px"),
-            k = (n.cssNumber[b] || "px" !== j && +i) && T.exec(n.css(a, b));
-        if (k && k[3] !== j) {
-            j = j || k[3], c = c || [], k = +i || 1;
-            do f = f || ".5", k /= f, n.style(a, b, k + j); while (f !== (f = h() / i) && 1 !== f && --g)
-        }
-        return c && (k = +k || +i || 0, e = c[1] ? k + (c[1] + 1) * c[2] : +c[2], d && (d.unit = j, d.start = k, d.end = e)), e
-    }
+    
     var X = /^(?:checkbox|radio)$/i,
         Y = /<([\w:-]+)/,
         Z = /^$|\/(?:java|ecma)script/i,
