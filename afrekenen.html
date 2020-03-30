@@ -30,12 +30,17 @@
 <body>
 <!-- header -->
 	<header>
-		<div id="header">
+				<div id="header">
 			<div class="container">
 				<div class="pull-left">
 					<div class="header-logo">
 						<a class="logo" href="index.html">
 							<img src="./img/logo.png" alt="logo">
+						</a>
+					</div>
+					<div class="header-logo2">
+						<a class="logo" href="index.html">
+							<img src="./img/logo2.png" alt="logo">
 						</a>
 					</div>
 				</div>
@@ -439,22 +444,22 @@
 								<h3 class="title">Verzendinformatie</h3>
 							</div>
 							<div class="form-group">
-								<input class="input" type="text" name="first-name" placeholder="Voornaam">
+								<input class="input" type="text" name="voornaam" placeholder="Voornaam" >
 							</div>
 							<div class="form-group">
-								<input class="input" type="text" name="last-name" placeholder="Achternaam">
+								<input class="input" type="text" name="achternaam" placeholder="Achternaam">
 							</div>
 							<div class="form-group">
 								<input class="input" type="email" name="email" placeholder="Email">
 							</div>
 							<div class="form-group">
-								<input class="input" type="text" name="address" placeholder="Straatnaam + huisnummer">
+								<input class="input" type="text" name="adres" placeholder="Straatnaam + huisnummer">
 							</div>
 							<div class="form-group">
-								<input class="input" type="text" name="city" placeholder="Stad">
+								<input class="input" type="text" name="stad" placeholder="Stad">
 							</div>
 							<div class="form-group">
-								<input class="input" type="text" name="zip-code" placeholder="Postcode (1234 AA)">
+								<input class="input" type="text" name="postcode" placeholder="Postcode (1234 AA)">
 							</div>
 							<div class="form-group">
 								<input class="input" type="tel" name="tel" placeholder="Telefoonnummer">
@@ -471,8 +476,7 @@
 								<input type="radio" name="shipping" id="shipping-1" checked>
 								<label for="shipping-1">Standaard verzending (1 - 4 werkdagen)</label>
 								<div class="caption">
-									<p>Momenteel is alleen standaard verzending mogelijk. 
-										<p>
+									<p>Momenteel is alleen standaard verzending mogelijk.<p>
 								</div>
 							</div>
 						</div>
@@ -484,9 +488,8 @@
 					
 							<div class="input-checkbox">
 								<input type="radio" name="payments" id="payments-1" checked>
-								<label for="payments-1">PayPal</label>
-									<p>Momenteel is het alleen mogelijk om te betalen via het PayPal platform. Excuses voor het ongemak.
-										<p>
+								<label for="payments-1">Overschrijving</label>
+									<p>Momenteel is het alleen mogelijk om te betalen via een overschrijving. Excuses voor het ongemak.<p>
 								</div>
 							</div>
 						</div>
@@ -574,14 +577,15 @@
 		<!-- /container -->
 	</div>
 	<!-- /section -->
+	
 <!-- footer -->
 	<footer id="footer" class="section section-grey">
 		<!-- container -->
 		<div class="container">
-			<!-- row -> col-md-3 -->
+			<!-- row -->
 			<div class="row">
 				<!-- footer bedrijf -->
-				<div class="col-md-3 col-sm-6 col-xs-6">
+				<div class="col-md-4 col-sm-6 col-xs-6">
 					<div class="footer">
 						<!-- footer logo -->
 						<div class="footer-logo">
@@ -601,12 +605,10 @@
 				</div>
 				<!-- /footer bedrijf-->
 
-			
-
 				<div class="clearfix visible-sm visible-xs"></div>
 
 				<!-- footer klantenservice -->
-				<div class="col-md-3 col-sm-6 col-xs-6">
+				<div class="col-md-4 col-sm-6 col-xs-6">
 					<div class="footer">
 						<h3 class="footer-header">Klantenservice</h3>
 						<ul class="list-links">
@@ -619,8 +621,11 @@
 				</div>
 				<!-- /footer klantenservice -->
 
+
+
+
 				<!-- footer nieuwsbrief -->
-				<div class="col-md-3 col-sm-6 col-xs-6">
+				<div class="col-md-4 col-sm-6 col-xs-6">
 					<div class="footer">
 						<h3 class="footer-header">Blijf op de hoogte</h3>
 						<p>Wilt u graag op de hoogte blijven van alle aanbiedingen, trends en inspiraties? Meld uzelf dan aan voor de nieuwsbrief!</p>
@@ -639,15 +644,20 @@
 		</div>
 		<!-- /container -->
 	</footer>
-
+	<!-- /footer -->
 
 
 	<!-- jQuery -->
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/slick.js"></script>
-	<script src="js/jquery.zoom.js"></script>
 	<script src="js/main.js"></script>
+
+<div class="footer-copyright">
+	<h5>© 2018-2020 Seasons & the Sea · Alle rechten voorbehouden.</h5>
+</div>
+
+
 
 </body>
 

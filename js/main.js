@@ -119,8 +119,6 @@
     asNavFor: '#product-main-view',
   });
 
-  // PRODUCT ZOOM
-  $('#product-main-view .product-view').zoom();
 
 
 })(jQuery);
