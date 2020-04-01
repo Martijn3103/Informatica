@@ -424,7 +424,7 @@ if(isset($_GET["action"]))
 											<li><a href="#">Zilveren bedelarmbanden</a></li>
 											<li><a href="#">Aluminium bedelarmbanden</a></li>
 											<li><a href="#">Messing bedelarmbanden</a></li>
-											<li><a href="#">Suikerpot-collectie</a></li>
+											<li><a href="#">*Suikerpot-collectie*</a></li>
 											<li><a href="#">Leren armbanden</a></li>
 										</ul>
 									</div>
@@ -442,7 +442,7 @@ if(isset($_GET["action"]))
 											<li>
 												<h3 class="list-links-title">Ringen</h3></li>
 											<li><a href="#">Gouden ring</a></li>
-											<li><a href="#">Zilveren ring</a></li>
+											<li><a href="#">*Zilveren ring*</a></li>
 											<li><a href="#">Aluminium ring</a></li>
 										</ul>
 									</div>
