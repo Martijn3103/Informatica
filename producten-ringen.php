@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Suikerpot-collectie</title>
+	<title>Zilveren ringen</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet font">
@@ -28,18 +28,18 @@
 </head>
 
 <body>
-<!-- header -->
+	<!-- header -->
 	<header>
 				<div id="header">
 			<div class="container">
 				<div class="pull-left">
 					<div class="header-logo">
-						<a class="logo" href="index.html">
+						<a class="logo" href="index.php">
 							<img src="./img/logo.png" alt="logo">
 						</a>
 					</div>
 					<div class="header-logo2">
-						<a class="logo" href="index.html">
+						<a class="logo" href="index.php">
 							<img src="./img/logo2.png" alt="logo">
 						</a>
 					</div>
@@ -56,10 +56,10 @@
 								</div>
 								<strong class="text-uppercase">*Mijn account* <i class="fa fa-caret-down"></i></strong>
 							</div>
-							<span<Li><a href="Inloggen.html" class="text-uppercase">*Login*</a></Li></span>
+							<a href="#" class="text-uppercase">*Login*</a> 
 							<ul class="custom-menu">
 								<li><a href="#"><i class="fa fa-user-o"></i> Mijn account</a></li>
-								<li><a href="afrekenen.html"><i class="fa fa-check"></i> *Afrekenen*</a></li>
+								<li><a href="afrkenen.php"><i class="fa fa-check"></i> *Afrekenen*</a></li>
 								<li><a href="#"><i class="fa fa-user-plus"></i> Een account aanmaken</a></li>
 							</ul>
 						</li>
@@ -71,7 +71,7 @@
 									<i class="fa fa-shopping-cart"></i>
 									<span class="qty">3</span>
 								</div>
-								<strong class="text-uppercase"><a href="afrekenen.html">*Winkelmandje:*</a></strong>
+								<strong class="text-uppercase"><a href="afrekenen.php">*Winkelmandje:*</a></strong>
 								<br>
 								<span>*€35,20*</span>
 						</li>
@@ -118,7 +118,7 @@
 											<li><a href="#">Zilveren bedelarmbanden</a></li>
 											<li><a href="#">Aluminium bedelarmbanden</a></li>
 											<li><a href="#">Messing bedelarmbanden</a></li>
-											<li><a href="producten-suikerpot-armbanden.html">*Suikerpot-collectie*</a></li>
+											<li><a href="producten-suikerpot-armbanden.php">*Suikerpot-collectie*</a></li>
 											<li><a href="#">Leren armbanden</a></li>
 										</ul>
 									</div>
@@ -126,7 +126,7 @@
 								<div class="row hidden-sm hidden-xs">
 									<div class="SMmd-12">
 										<hr>
-										<a class="banner banner-1" href="producten-suikerpot-armbanden.html">
+										<a class="banner banner-1" href="producten-suikerpot-armbanden.php">
 											<img src="./img/banner05.jpg" alt="">
 											<div class="banner-caption text-center">
 												<h2 class="black-color">NIEUWE COLLECTIE</h2>
@@ -147,7 +147,7 @@
 											<li>
 												<h3 class="list-links-title">Zilveren kettingen</h3></li>
 											<li><a href="#">Zilveren ketting met grote bedel</a></li>
-											<li><a href="producten-kettingen.html">*Zilveren ketting met middelgrote bedel*</a></li>
+											<li><a href="producten-kettingen.php">*Zilveren ketting met middelgrote bedel*</a></li>
 											<li><a href="#">Zilveren ketting met kleine bedel</a></li>
 											<li><a href="#">Zilveren ketting zonder bedel</a></li>
 										</ul>
@@ -192,7 +192,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href="producten-ringen.html">*Ringen*</a></li>
+						<li><a href="producten-ringen.php">*Ringen*</a></li>
 						<li class="dropdown side-dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Custom made hangers <i class="fa fa-angle-right"></i></a>
 							<div class="custom-menu">
@@ -278,7 +278,7 @@
 				<div class="menu-nav">
 					<span class="menu-header">Heren of Dames? <i class="fa fa-bars"></i></span>
 					<ul class="menu-list">
-						<li><a href="index.html">*Home*</a></li>
+						<li><a href="index.php">*Home*</a></li>
 						<li class="dropdown mega-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Heren <i class="fa fa-caret-down"></i></a>
 							<div class="custom-menu">
 								<div class="row">
@@ -346,7 +346,7 @@
 											<li><a href="#">Zilveren bedelarmbanden</a></li>
 											<li><a href="#">Aluminium bedelarmbanden</a></li>
 											<li><a href="#">Messing bedelarmbanden</a></li>
-											<li><a href="producten-suikerpot-armbanden.html">*Suikerpot-collectie*</a></li>
+											<li><a href="producten-suikerpot-armbanden.php">*Suikerpot-collectie*</a></li>
 											<li><a href="#">Leren armbanden</a></li>
 										</ul>
 									</div>
@@ -364,7 +364,7 @@
 											<li>
 												<h3 class="list-links-title">Ringen</h3></li>
 											<li><a href="#">Gouden ring</a></li>
-											<li><a href="producten-ringen.html">*Zilveren ring*</a></li>
+											<li><a href="producten-ringen.php">*Zilveren ring*</a></li>
 											<li><a href="#">Aluminium ring</a></li>
 										</ul>
 									</div>
@@ -419,14 +419,14 @@
 	</div>
 	<!-- /categorieën -->
 
+
 	<!-- breadcrumb -->
 	<div id="breadcrumb">
 		<div class="container">
 			<ul class="breadcrumb">
-				<li><a href="index.html">*Home*</a></li>
+				<li><a href="index.php">*Home*</a></li>
 				<li><a href="#">Dames</a></li>
-				<li><a href="#">Armbanden</a></li>
-				<li class="active">Suikerpot-collectie</li>
+				<li class="active">Zilveren Ringen</li>
 			</ul>
 		</div>
 	</div>
@@ -448,17 +448,13 @@
 							<div class="col-md-3 col-sm-6 col-xs-6">
 								<div class="product product-single">
 									<div class="product-thumb">
-										<div class="product-label">
-											<span>Nieuw</span>
-											<span class="sale">-20%</span>
-										</div>
-										<button class="main-btn quick-view"><i class="fa fa-search-plus"></i> Bekijk dit artikel</button>
-										<img src="./img/product01.jpeg" alt="">
+										<a href="product-ring.php"><button class="main-btn quick-view"><i class="fa fa-search-plus"></i> *Bekijk dit artikel*</button></a>
+										<img src="./img/ring01.jpeg" alt="">
 									</div>
 									<div class="product-body">
-										<h3 class="product-price">€23,99 <del class="product-old-price">€29,99</del></h3>
+										<h3 class="product-price">€15.95</h3>
 
-										<h2 class="product-name"><a href="#">Every moment matters</a></h2>
+										<h2 class="product-name"><a href="product-ring.php">*Ocean Wave*</a></h2>
 										<div class="product-btns">
 
 											<button class="blauwe-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Toevoegen aan winkelmandje</button>
@@ -472,13 +468,13 @@
 							<div class="col-md-3 col-sm-6 col-xs-6">
 								<div class="product product-single">
 									<div class="product-thumb">
-										<a href="product-live-love-laugh.html">	<button class="main-btn quick-view"><i class="fa fa-search-plus"></i> *Bekijk dit artikel*</button></a>
-										<img src="./img/product02.jpeg" alt="">
+										<button class="main-btn quick-view"><i class="fa fa-search-plus"></i> Bekijk dit artikel</button>
+										<img src="./img/ring02.jpeg" alt="">
 									</div>
 									<div class="product-body">
-										<h3 class="product-price">€29,99</h3>
+										<h3 class="product-price">€9.95</h3>
 
-										<h2 class="product-name"><a href="product-live-love-laugh.html">*Live, love, laugh*</a></h2>
+										<h2 class="product-name"><a href="#">Ring Knot</a></h2>
 										<div class="product-btns">
 
 											<button class="blauwe-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Toevoegen aan winkelmandje</button>
@@ -496,15 +492,15 @@
 									<div class="product-thumb">
 										<div class="product-label">
 											<span>Nieuw</span>
-											<span class="sale">-20%</span>
+											<span class="sale">-35%</span>
 										</div>
-										<a href="product-moon.html"><button class="main-btn quick-view"><i class="fa fa-search-plus"></i> *Bekijk dit artikel*</button></a>
-										<img src="./img/product03.jpeg" alt="">
+										<button class="main-btn quick-view"><i class="fa fa-search-plus"></i> Bekijk dit artikel</button>
+										<img src="./img/ring03.jpeg" alt="">
 									</div>
 									<div class="product-body">
-										<h3 class="product-price beige-color">€23,99 <del class="product-old-price">€29.99</del></h3>
+										<h3 class="product-price beige-color">€12.95 <del class="product-old-price">€19.95</del></h3>
 
-										<h2 class="product-name"><a href="product-moon.html">*I love you to the moon and back*</a></h2>
+										<h2 class="product-name"><a href="#">Ring met steen</a></h2>
 										<div class="product-btns">
 
 											<button class="blauwe-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Toevoegen aan winkelmandje</button>
@@ -521,14 +517,15 @@
 								<div class="product product-single">
 									<div class="product-thumb">
 										<div class="product-label">
+											<span>Nieuw</span>
 										</div>
 										<button class="main-btn quick-view"><i class="fa fa-search-plus"></i> Bekijk dit artikel</button>
-										<img src="./img/product04.jpeg" alt="">
+										<img src="./img/ring04.jpeg" alt="">
 									</div>
 									<div class="product-body">
-										<h3 class="product-price">€29.99</h3>
+										<h3 class="product-price">€23.95</h3>
 
-										<h2 class="product-name"><a href="#">Hello sunshine</a></h2>
+										<h2 class="product-name"><a href="#">Ring met steen</a></h2>
 										<div class="product-btns">
 
 											<button class="blauwe-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Toevoegen aan winkelmandje</button>
@@ -565,7 +562,7 @@
 					<div class="footer">
 						<!-- footer logo -->
 						<div class="footer-logo">
-							<a class="logo" href="index.html">
+							<a class="logo" href="index.php">
 		            <img src="./img/logo-footer.png" alt="">
 		          </a>
 						</div>
@@ -594,7 +591,6 @@
 							<li><a href="#">Retourneren</a></li>
 							<li><a href="#">Hoe verzenden wij onze producten?</a></li>
 							<li><a href="#">FAQ</a></li>
-							<li><a href="contact-form.html">*Contactformulier*</a></li>
 						</ul>
 					</div>
 				</div>
@@ -621,6 +617,7 @@
 		<!-- /container -->
 	</footer>
 
+
 	<!-- jQuery -->
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
@@ -628,10 +625,10 @@
 	<script src="js/main.js"></script>
 
 
-
 <div class="footer-copyright">
 	<h5>© 2018-2020 Seasons & the Sea · Alle rechten voorbehouden.</h5>
 </div>
+
 
 
 </body>

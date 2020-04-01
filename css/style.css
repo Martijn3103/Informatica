@@ -1040,6 +1040,7 @@ textarea.input {
 .shopping-cart-table>tbody>tr>.details>a {
   font-size: 18px;
   font-weight: 700;
+  margin-left: 50px;
 }
 
 .shopping-cart-table>tbody>tr>.thumb>img {
@@ -1144,20 +1145,4 @@ textarea.input {
   [class*='col-xs'] {
     width: 100%;
   }
-}
-
-/*----------------------------*\
-	contact
-\*----------------------------*/
-
-
-input[type=text], select, textarea {
-  width: 100%; 
-  padding: 12px; 
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical 
 }

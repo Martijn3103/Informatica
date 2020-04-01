@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Tropical Sea</title>
+	<title>Suikerpot-collectie</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet font">
@@ -21,27 +21,25 @@
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
-	
-	<!--Favicon-->
-	<link rel="shortcut icon" type="image/pgn" href="./img/favicon.png"/>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
 
 </head>
 
 <body>
-	
-
 <!-- header -->
 	<header>
 				<div id="header">
 			<div class="container">
 				<div class="pull-left">
 					<div class="header-logo">
-						<a class="logo" href="index.html">
+						<a class="logo" href="index.php">
 							<img src="./img/logo.png" alt="logo">
 						</a>
 					</div>
 					<div class="header-logo2">
-						<a class="logo" href="index.html">
+						<a class="logo" href="index.php">
 							<img src="./img/logo2.png" alt="logo">
 						</a>
 					</div>
@@ -58,10 +56,10 @@
 								</div>
 								<strong class="text-uppercase">*Mijn account* <i class="fa fa-caret-down"></i></strong>
 							</div>
-							<span<Li><a href="Inloggen.html" class="text-uppercase">*Login*</a></Li><span>
+							<a href="#" class="text-uppercase">*Login*</a> 
 							<ul class="custom-menu">
 								<li><a href="#"><i class="fa fa-user-o"></i> Mijn account</a></li>
-								<li><a href="afrekenen.html"><i class="fa fa-check"></i> *Afrekenen*</a></li>
+								<li><a href="afrekenen.php"><i class="fa fa-check"></i> *Afrekenen*</a></li>
 								<li><a href="#"><i class="fa fa-user-plus"></i> Een account aanmaken</a></li>
 							</ul>
 						</li>
@@ -73,7 +71,7 @@
 									<i class="fa fa-shopping-cart"></i>
 									<span class="qty">3</span>
 								</div>
-								<strong class="text-uppercase"><a href="afrekenen.html">*Winkelmandje:*</a></strong>
+								<strong class="text-uppercase"><a href="afrekenen.php">*Winkelmandje:*</a></strong>
 								<br>
 								<span>*€35,20*</span>
 						</li>
@@ -120,7 +118,7 @@
 											<li><a href="#">Zilveren bedelarmbanden</a></li>
 											<li><a href="#">Aluminium bedelarmbanden</a></li>
 											<li><a href="#">Messing bedelarmbanden</a></li>
-											<li><a href="producten-suikerpot-armbanden.html">*Suikerpot-collectie*</a></li>
+											<li><a href="producten-suikerpot-armbanden.php">*Suikerpot-collectie*</a></li>
 											<li><a href="#">Leren armbanden</a></li>
 										</ul>
 									</div>
@@ -128,7 +126,7 @@
 								<div class="row hidden-sm hidden-xs">
 									<div class="SMmd-12">
 										<hr>
-										<a class="banner banner-1" href="producten-suikerpot-armbanden.html">
+										<a class="banner banner-1" href="producten-suikerpot-armbanden.php">
 											<img src="./img/banner05.jpg" alt="">
 											<div class="banner-caption text-center">
 												<h2 class="black-color">NIEUWE COLLECTIE</h2>
@@ -149,7 +147,7 @@
 											<li>
 												<h3 class="list-links-title">Zilveren kettingen</h3></li>
 											<li><a href="#">Zilveren ketting met grote bedel</a></li>
-											<li><a href="producten-kettingen.html">*Zilveren ketting met middelgrote bedel*</a></li>
+											<li><a href="producten-kettingen.php">*Zilveren ketting met middelgrote bedel*</a></li>
 											<li><a href="#">Zilveren ketting met kleine bedel</a></li>
 											<li><a href="#">Zilveren ketting zonder bedel</a></li>
 										</ul>
@@ -194,7 +192,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href="producten-ringen.html">*Ringen*</a></li>
+						<li><a href="producten-ringen.php">*Ringen*</a></li>
 						<li class="dropdown side-dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Custom made hangers <i class="fa fa-angle-right"></i></a>
 							<div class="custom-menu">
@@ -280,7 +278,7 @@
 				<div class="menu-nav">
 					<span class="menu-header">Heren of Dames? <i class="fa fa-bars"></i></span>
 					<ul class="menu-list">
-						<li><a href="index.html">*Home*</a></li>
+						<li><a href="index.php">*Home*</a></li>
 						<li class="dropdown mega-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Heren <i class="fa fa-caret-down"></i></a>
 							<div class="custom-menu">
 								<div class="row">
@@ -348,7 +346,7 @@
 											<li><a href="#">Zilveren bedelarmbanden</a></li>
 											<li><a href="#">Aluminium bedelarmbanden</a></li>
 											<li><a href="#">Messing bedelarmbanden</a></li>
-											<li><a href="producten-suikerpot-armbanden.html">*Suikerpot-collectie*</a></li>
+											<li><a href="producten-suikerpot-armbanden.php">*Suikerpot-collectie*</a></li>
 											<li><a href="#">Leren armbanden</a></li>
 										</ul>
 									</div>
@@ -366,7 +364,7 @@
 											<li>
 												<h3 class="list-links-title">Ringen</h3></li>
 											<li><a href="#">Gouden ring</a></li>
-											<li><a href="producten-ringen.html">*Zilveren ring*</a></li>
+											<li><a href="producten-ringen.php">*Zilveren ring*</a></li>
 											<li><a href="#">Aluminium ring</a></li>
 										</ul>
 									</div>
@@ -421,129 +419,153 @@
 	</div>
 	<!-- /categorieën -->
 
-
 	<!-- breadcrumb -->
 	<div id="breadcrumb">
 		<div class="container">
 			<ul class="breadcrumb">
-				<li><a href="index.html">*Home*</a></li>
+				<li><a href="index.php">*Home*</a></li>
 				<li><a href="#">Dames</a></li>
-				<li><a href="producten-kettingen.html">*Zilveren kettingen met middelgrote bedel*</a></li>
-				<li class="active">Tropical Sea</li>
+				<li><a href="#">Armbanden</a></li>
+				<li class="active">Suikerpot-collectie</li>
 			</ul>
 		</div>
 	</div>
 	<!-- /breadcrumb -->
 
-	<!-- product -->
-	<div class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -> col-md-6 -->
-			<div class="row">
-				<!--  productinformatie -->
-				<div class="product product-details clearfix">
-					<div class="col-md-4 col-sm-4">
-						<div id="product-main-view">
-							<div class="product-view">
-
-								<img src="./img/ketting01.jpeg" alt="">
-
-							</div>
-							<div class="product-view">
-								<img src="./img/ketting02.jpeg" alt="">
-							</div>
-							<div class="product-view">
-								<img src="./img/ketting03.jpeg" alt="">
-							</div>
-							<div class="product-view">
-								<img src="./img/ketting04.jpeg" alt="">
-							</div>
-						</div>
-						<div id="product-view">
-							<div class="product-view">
-								<img src="./img/ketting01.jpeg" alt="">
-							</div>
-							<div class="product-view">
-								<img src="./img/ketting02.jpeg" alt="">
-							</div>
-							<div class="product-view">
-								<img src="./img/ketting03.jpeg" alt="">
-							</div>
-							<div class="product-view">
-								<img src="./img/ketting04.jpeg" alt="">
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="product-body">
-							<div class="product-label">
-								<span>Nieuw</span>
-								<span class="sale">-40%</span>
-							</div>
-							<h2 class="product-name">Tropical Sea</h2>
-							<h3 class="product-price">€11,95 <del class="product-old-price">€19.95</del></h3>
-							<p><strong>Collectie:</strong> Kettingen</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-								dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<div class="product-options">
-								<ul class="size-option">
-									<li><span class="text-uppercase">Soort:</span></li>
-									<li class="active"><a href="#">Palmboom</a></li>
-									<li><a href="#">Dolfijn</a></li>
-									<li><a href="#">Bloem</a></li>
-									<li><a href="#">Schelp</a></li>
-								</ul>
-							</div>
-
-							<div class="product-btns">
-								<div class="qty-input">
-									<span class="text-uppercase">Aantal: </span>
-									<input class="input" type="number" min="1" value="1">
-								</div>
-								<div class="pull-right ">
-									<button class="blauwe-btn add-to-cart"><i class="fa fa-shopping-cart"></i>Toevoegen aan winkelmandje</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-12">
-						<div class="product-tab">
-							<ul class="tab-nav">
-								<li class="active"><a data-toggle="tab" href="#tab1">Beschrijving</a></li>
+	<!-- eshop -->
+							<ul class="store-pages">
+								<li><span class="text-uppercase">Pagina:</span></li>
+								<li class="active">1</li>
 							</ul>
-							<div class="tab-content">
-								<div id="tab1" class="tab-pane fade in active">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-										irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-								</div>
-							</div>
 						</div>
 					</div>
+
+					<!-- artikelen -->
+					<div id="store">
+						<!-- row -->
+						<div class="row">
+							<!-- Enkel artikel1 -->
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="product product-single">
+									<div class="product-thumb">
+										<div class="product-label">
+											<span>Nieuw</span>
+											<span class="sale">-20%</span>
+										</div>
+										<button class="main-btn quick-view"><i class="fa fa-search-plus"></i> Bekijk dit artikel</button>
+										<img src="./img/product01.jpeg" alt="">
+									</div>
+									<div class="product-body">
+										<h3 class="product-price">€23,99 <del class="product-old-price">€29,99</del></h3>
+
+										<h2 class="product-name"><a href="#">Every moment matters</a></h2>
+										<div class="product-btns">
+
+											<button class="blauwe-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Toevoegen aan winkelmandje</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /enkel artikel1 -->
+
+							<!-- enkel artikel2 -->
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="product product-single">
+									<div class="product-thumb">
+										<a href="product-live-love-laugh.php">	<button class="main-btn quick-view"><i class="fa fa-search-plus"></i> *Bekijk dit artikel*</button></a>
+										<img src="./img/product02.jpeg" alt="">
+									</div>
+									<div class="product-body">
+										<h3 class="product-price">€29,99</h3>
+
+										<h2 class="product-name"><a href="product-live-love-laugh.php">*Live, love, laugh*</a></h2>
+										<div class="product-btns">
+
+											<button class="blauwe-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Toevoegen aan winkelmandje</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /enkel artikel2 -->
+
+							<div class="clearfix visible-sm visible-xs"></div>
+
+							<!-- enkel artikel3 -->
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="product product-single">
+									<div class="product-thumb">
+										<div class="product-label">
+											<span>Nieuw</span>
+											<span class="sale">-20%</span>
+										</div>
+										<a href="product-moon.php"><button class="main-btn quick-view"><i class="fa fa-search-plus"></i> *Bekijk dit artikel*</button></a>
+										<img src="./img/product03.jpeg" alt="">
+									</div>
+									<div class="product-body">
+										<h3 class="product-price beige-color">€23,99 <del class="product-old-price">€29.99</del></h3>
+
+										<h2 class="product-name"><a href="product-moon.php">*I love you to the moon and back*</a></h2>
+										<div class="product-btns">
+
+											<button class="blauwe-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Toevoegen aan winkelmandje</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /enkel artikel3 -->
+
+							<div class="clearfix visible-md visible-lg"></div>
+
+							<!-- Enkel artikel4 -->
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="product product-single">
+									<div class="product-thumb">
+										<div class="product-label">
+										</div>
+										<button class="main-btn quick-view"><i class="fa fa-search-plus"></i> Bekijk dit artikel</button>
+										<img src="./img/product04.jpeg" alt="">
+									</div>
+									<div class="product-body">
+										<h3 class="product-price">€29.99</h3>
+
+										<h2 class="product-name"><a href="#">Hello sunshine</a></h2>
+										<div class="product-btns">
+
+											<button class="blauwe-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Toevoegen aan winkelmandje</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /enkel artikel4 -->
+						</div>
+						<!-- /row -->
+					</div>
+					<!-- /artikelen -->
+
+							<ul class="store-pages">
+								<li><span class="text-uppercase">Pagina:</span></li>
+								<li class="active">1</li>
+							</ul>
+
 				</div>
-				<!-- /productinformatie -->
 			</div>
-			<!-- /row -> col-md-6 -->
+			<!-- /row -->
 		</div>
-		<!-- /container -->
 	</div>
-	<!-- /product -->
-
-	
-
+	<!-- /eshop -->
 
 <!-- footer -->
 	<footer id="footer" class="section grijs-gebied">
 		<!-- container -->
 		<div class="container">
-			<!-- row --> 
+			<!-- row -->
 			<div class="row">
 				<!-- footer bedrijf -->
 				<div class="col-md-4 col-sm-6 col-xs-6">
 					<div class="footer">
 						<!-- footer logo -->
 						<div class="footer-logo">
-							<a class="logo" href="index.html">
+							<a class="logo" href="index.php">
 		            <img src="./img/logo-footer.png" alt="">
 		          </a>
 						</div>
@@ -572,7 +594,6 @@
 							<li><a href="#">Retourneren</a></li>
 							<li><a href="#">Hoe verzenden wij onze producten?</a></li>
 							<li><a href="#">FAQ</a></li>
-							<li><a href="contact-form.html">*Contactformulier*</a></li>
 						</ul>
 					</div>
 				</div>
@@ -599,17 +620,17 @@
 		<!-- /container -->
 	</footer>
 
-
 	<!-- jQuery -->
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/slick.js"></script>
 	<script src="js/main.js"></script>
 
+
+
 <div class="footer-copyright">
 	<h5>© 2018-2020 Seasons & the Sea · Alle rechten voorbehouden.</h5>
 </div>
-
 
 
 </body>

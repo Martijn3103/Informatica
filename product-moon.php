@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Ocean Wave</title>
+	<title>I Love You To The Moon And Back</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet font">
@@ -21,25 +21,25 @@
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
-	
-	<!--Favicon-->
-	<link rel="shortcut icon" type="image/pgn" href="./img/favicon.png"/>
 
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
+	
 </head>
 
 <body>
-<!-- header -->
+	<!-- header -->
 	<header>
 				<div id="header">
 			<div class="container">
 				<div class="pull-left">
 					<div class="header-logo">
-						<a class="logo" href="index.html">
+						<a class="logo" href="index.php">
 							<img src="./img/logo.png" alt="logo">
 						</a>
 					</div>
 					<div class="header-logo2">
-						<a class="logo" href="index.html">
+						<a class="logo" href="index.php">
 							<img src="./img/logo2.png" alt="logo">
 						</a>
 					</div>
@@ -47,7 +47,6 @@
 
 				<div class="pull-right">
 					<ul class="header-btns">
-						
 						<!-- Account -->
 						<li class="header-account dropdown default-dropdown">
 							<div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
@@ -56,24 +55,26 @@
 								</div>
 								<strong class="text-uppercase">*Mijn account* <i class="fa fa-caret-down"></i></strong>
 							</div>
-							<span<Li><a href="Inloggen.html" class="text-uppercase">*Login*</a></Li></span>
+							<a href="#" class="text-uppercase">*Login*</a> 
 							<ul class="custom-menu">
 								<li><a href="#"><i class="fa fa-user-o"></i> Mijn account</a></li>
-								<li><a href="afrekenen.html"><i class="fa fa-check"></i> *Afrekenen*</a></li>
+								<li><a href="#"><i class="fa fa-check"></i> *Afrekenen*</a></li>
 								<li><a href="#"><i class="fa fa-user-plus"></i> Een account aanmaken</a></li>
 							</ul>
 						</li>
 						<!-- /Account -->
 
 						<!-- Winkelwagen -->
-						<li class="header-cart">
+						<li class="header-cart dropdown default-dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 								<div class="header-btns-icon">
 									<i class="fa fa-shopping-cart"></i>
 									<span class="qty">3</span>
 								</div>
-								<strong class="text-uppercase"><a href="afrekenen.html">*Winkelmandje:*</a></strong>
+								<strong class="text-uppercase">*Mijn winkelmandje:*</strong>
 								<br>
-								<span>*€35,20*</span>
+								<span>*35.20$*</span>
+							</a>
 						</li>
 						<!-- /Winkelmandje -->
 
@@ -99,7 +100,7 @@
 					<span class="category-header">Categorieën <i class="fa fa-list"></i></span>
 					<ul class="category-list">
 						<li class="dropdown side-dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">*Armbanden* <i class="fa fa-angle-right"></i></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Armbanden <i class="fa fa-angle-right"></i></a>
 							<div class="custom-menu">
 								<div class="row">
 									<div class="col-md-4">
@@ -118,7 +119,7 @@
 											<li><a href="#">Zilveren bedelarmbanden</a></li>
 											<li><a href="#">Aluminium bedelarmbanden</a></li>
 											<li><a href="#">Messing bedelarmbanden</a></li>
-											<li><a href="producten-suikerpot-armbanden.html">*Suikerpot-collectie*</a></li>
+											<li><a href="#">Suikerpot-collectie</a></li>
 											<li><a href="#">Leren armbanden</a></li>
 										</ul>
 									</div>
@@ -126,7 +127,7 @@
 								<div class="row hidden-sm hidden-xs">
 									<div class="SMmd-12">
 										<hr>
-										<a class="banner banner-1" href="producten-suikerpot-armbanden.html">
+										<a class="banner banner-1" href="#">
 											<img src="./img/banner05.jpg" alt="">
 											<div class="banner-caption text-center">
 												<h2 class="black-color">NIEUWE COLLECTIE</h2>
@@ -139,7 +140,7 @@
 							</div>
 						</li>
 						<li><a href="#">Enkelbandjes</a></li>
-						<li class="dropdown side-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">*Kettingen* <i class="fa fa-angle-right"></i></a>
+						<li class="dropdown side-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Kettingen <i class="fa fa-angle-right"></i></a>
 							<div class="custom-menu">
 								<div class="row">
 									<div class="col-md-4">
@@ -147,7 +148,7 @@
 											<li>
 												<h3 class="list-links-title">Zilveren kettingen</h3></li>
 											<li><a href="#">Zilveren ketting met grote bedel</a></li>
-											<li><a href="producten-kettingen.html">*Zilveren ketting met middelgrote bedel*</a></li>
+											<li><a href="#">Zilveren ketting met middelgrote bedel</a></li>
 											<li><a href="#">Zilveren ketting met kleine bedel</a></li>
 											<li><a href="#">Zilveren ketting zonder bedel</a></li>
 										</ul>
@@ -192,7 +193,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href="producten-ringen.html">*Ringen*</a></li>
+						<li><a href="#">Ringen</a></li>
 						<li class="dropdown side-dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Custom made hangers <i class="fa fa-angle-right"></i></a>
 							<div class="custom-menu">
@@ -278,7 +279,7 @@
 				<div class="menu-nav">
 					<span class="menu-header">Heren of Dames? <i class="fa fa-bars"></i></span>
 					<ul class="menu-list">
-						<li><a href="index.html">*Home*</a></li>
+						<li><a href="index.php">*Home*</a></li>
 						<li class="dropdown mega-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Heren <i class="fa fa-caret-down"></i></a>
 							<div class="custom-menu">
 								<div class="row">
@@ -327,7 +328,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="dropdown mega-dropdown full-width"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">*Dames* <i class="fa fa-caret-down"></i></a>
+						<li class="dropdown mega-dropdown full-width"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Dames <i class="fa fa-caret-down"></i></a>
 							<div class="custom-menu">
 								<div class="row">
 									<div class="col-md-3">
@@ -346,7 +347,7 @@
 											<li><a href="#">Zilveren bedelarmbanden</a></li>
 											<li><a href="#">Aluminium bedelarmbanden</a></li>
 											<li><a href="#">Messing bedelarmbanden</a></li>
-											<li><a href="producten-suikerpot-armbanden.html">*Suikerpot-collectie*</a></li>
+											<li><a href="#">Suikerpot-collectie</a></li>
 											<li><a href="#">Leren armbanden</a></li>
 										</ul>
 									</div>
@@ -364,7 +365,7 @@
 											<li>
 												<h3 class="list-links-title">Ringen</h3></li>
 											<li><a href="#">Gouden ring</a></li>
-											<li><a href="producten-ringen.html">*Zilveren ring*</a></li>
+											<li><a href="#">Zilveren ring</a></li>
 											<li><a href="#">Aluminium ring</a></li>
 										</ul>
 									</div>
@@ -423,10 +424,11 @@
 	<div id="breadcrumb">
 		<div class="container">
 			<ul class="breadcrumb">
-				<li><a href="index.html">*Home*</a></li>
+				<li><a href="index.php">*Home*</a></li>
 				<li><a href="#">Dames</a></li>
-				<li><a href="producten-ringen.html">*Zilveren ringen*</a></li>
-				<li class="active">Ocean Wave</li>
+				<li><a href="#">Armbanden</a></li>
+				<li><a href="producten-suikerpot-armbanden.php">*Suikerpot Collectie*</a></li>
+				<li class="active">Love you to the moon & back</li>
 			</ul>
 		</div>
 	</div>
@@ -443,31 +445,43 @@
 					<div class="col-md-6">
 						<div id="product-main-view">
 							<div class="product-view">
-								<img src="./img/ring01.jpeg" alt="">
+								<img src="./img/moon01.jpeg" alt="">
 							</div>
+							<div class="product-view">
+								<img src="./img/moon02.jpeg" alt="">
 							</div>
-					
+						</div>
 						<div id="product-view">
 							<div class="product-view">
-								<img src="./img/ring01.jpeg" alt="">
+								<img src="./img/thumb-moon01.jpeg" alt="">
 							</div>
-							
+							<div class="product-view">
+								<img src="./img/thumb-moon02.jpeg" alt="">
+							</div>
+							<div class="product-view">
+								<img src="./img/thumb-moon01.jpeg" alt="">
+							</div>
+							<div class="product-view">
+								<img src="./img/thumb-moon02.jpeg" alt="">
+							</div>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="product-body">
 							<div class="product-label">
+								<span>Nieuw</span>
+								<span class="sale">-20%</span>
 							</div>
-							<h2 class="product-name">Ocean Wave</h2>
-							<h3 class="product-price">€15,95 </h3>
-							<p><strong>Collectie:</strong> Ringen</p>
+							<h2 class="product-name">Love you to the moon & back</h2>
+							<h3 class="product-price">€23.99 <del class="product-old-price">€29.99</del></h3>
+							<p><strong>Collectie:</strong> Armbanden</p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
 								dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 							<div class="product-options">
 								<ul class="size-option">
 									<li><span class="text-uppercase">Soort:</span></li>
-									<li class="active"><a href="#">Zilver</a></li>
-								
+									<li class="active"><a href="#">Met icoon</a></li>
+									<li><a href="#">Met letters (moon)</a></li>
 								</ul>
 							</div>
 
@@ -489,7 +503,7 @@
 							</ul>
 							<div class="tab-content">
 								<div id="tab1" class="tab-pane fade in active">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicin lit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
 										irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 								</div>
 							</div>
@@ -505,18 +519,20 @@
 	<!-- /product -->
 
 	
+
+
 <!-- footer -->
 	<footer id="footer" class="section grijs-gebied">
 		<!-- container -->
 		<div class="container">
-			<!-- row --> 
+			<!-- row -->
 			<div class="row">
 				<!-- footer bedrijf -->
 				<div class="col-md-4 col-sm-6 col-xs-6">
 					<div class="footer">
 						<!-- footer logo -->
 						<div class="footer-logo">
-							<a class="logo" href="index.html">
+							<a class="logo" href="index.php">
 		            <img src="./img/logo-footer.png" alt="">
 		          </a>
 						</div>
@@ -545,7 +561,6 @@
 							<li><a href="#">Retourneren</a></li>
 							<li><a href="#">Hoe verzenden wij onze producten?</a></li>
 							<li><a href="#">FAQ</a></li>
-							<li><a href="contact-form.html">*Contactformulier*</a></li>
 						</ul>
 					</div>
 				</div>
@@ -572,17 +587,16 @@
 		<!-- /container -->
 	</footer>
 
+
 	<!-- jQuery -->
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/slick.js"></script>
 	<script src="js/main.js"></script>
 
-
 <div class="footer-copyright">
 	<h5>© 2018-2020 Seasons & the Sea · Alle rechten voorbehouden.</h5>
 </div>
-
 
 </body>
 

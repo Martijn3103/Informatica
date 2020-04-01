@@ -1,3 +1,60 @@
+<?php 
+session_start();
+$connect = mysqli_connect("localhost", "root", "", "testing");
+
+if(isset($_POST["add_to_cart"]))
+{
+	if(isset($_SESSION["shopping_cart"]))
+	{
+		$item_array_id = array_column($_SESSION["shopping_cart"], "item_id");
+		if(!in_array($_GET["id"], $item_array_id))
+		{
+			$count = count($_SESSION["shopping_cart"]);
+			$item_array = array(
+				'item_id'			=>	$_GET["id"],
+				'item_name'			=>	$_POST["hidden_name"],
+				'item_price'		=>	$_POST["hidden_price"],
+				'item_quantity'		=>	$_POST["quantity"]
+			);
+			$_SESSION["shopping_cart"][$count] = $item_array;
+		}
+		else
+		{
+			echo '<script>alert("Dit product zit al in uw winkelmandje")</script>';
+		}
+	}
+	else
+	{
+		$item_array = array(
+			'item_id'			=>	$_GET["id"],
+			'item_name'			=>	$_POST["hidden_name"],
+			'item_price'		=>	$_POST["hidden_price"],
+			'item_quantity'		=>	$_POST["quantity"]
+		);
+		$_SESSION["shopping_cart"][0] = $item_array;
+	}
+}
+
+if(isset($_GET["action"]))
+{
+	if($_GET["action"] == "delete")
+	{
+		foreach($_SESSION["shopping_cart"] as $keys => $values)
+		{
+			if($values["item_id"] == $_GET["id"])
+			{
+				unset($_SESSION["shopping_cart"][$keys]);
+				echo '<script>alert("Product verwijderd")</script>';
+				echo '<script>window.location="afrekenen.php"</script>';
+			}
+		}
+	}
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 
 <head>
@@ -5,7 +62,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Live Love Laugh</title>
+	<title>Afrekenen</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet font">
@@ -24,22 +81,22 @@
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
-	
+
 </head>
 
 <body>
-	<!-- header -->
+<!-- header -->
 	<header>
 				<div id="header">
 			<div class="container">
 				<div class="pull-left">
 					<div class="header-logo">
-						<a class="logo" href="index.html">
+						<a class="logo" href="index.php">
 							<img src="./img/logo.png" alt="logo">
 						</a>
 					</div>
 					<div class="header-logo2">
-						<a class="logo" href="index.html">
+						<a class="logo" href="index.php">
 							<img src="./img/logo2.png" alt="logo">
 						</a>
 					</div>
@@ -56,10 +113,10 @@
 								</div>
 								<strong class="text-uppercase">*Mijn account* <i class="fa fa-caret-down"></i></strong>
 							</div>
-							<span<Li><a href="Inloggen.html" class="text-uppercase">*Login*</a></Li></span>
+							<a href="#" class="text-uppercase">*Login*</a> 
 							<ul class="custom-menu">
 								<li><a href="#"><i class="fa fa-user-o"></i> Mijn account</a></li>
-								<li><a href="afrekenen.html"><i class="fa fa-check"></i> *Afrekenen*</a></li>
+								<li><a href="afrekenen.php"><i class="fa fa-check"></i> *Afrekenen*</a></li>
 								<li><a href="#"><i class="fa fa-user-plus"></i> Een account aanmaken</a></li>
 							</ul>
 						</li>
@@ -71,9 +128,20 @@
 									<i class="fa fa-shopping-cart"></i>
 									<span class="qty">3</span>
 								</div>
-								<strong class="text-uppercase"><a href="afrekenen.html">*Winkelmandje:*</a></strong>
+								<strong class="text-uppercase"><a href="afrekenen.php">*Winkelmandje:*</a></strong>
 								<br>
-								<span>*€35,20*</span>
+								<?php
+					
+						$total = 0;
+						foreach($_SESSION["shopping_cart"] as $keys => $values)
+						{
+												
+							$total = $total + ($values["item_quantity"] * $values["item_price"]);
+						}
+					?>
+								<span> €
+		<?php echo number_format($total, 2); ?>
+								</span>
 						</li>
 						<!-- /Winkelmandje -->
 
@@ -118,7 +186,7 @@
 											<li><a href="#">Zilveren bedelarmbanden</a></li>
 											<li><a href="#">Aluminium bedelarmbanden</a></li>
 											<li><a href="#">Messing bedelarmbanden</a></li>
-											<li><a href="producten-suikerpot-armbanden.html">*Suikerpot-collectie*</a></li>
+											<li><a href="producten-suikerpot-armbanden.php">*Suikerpot-collectie*</a></li>
 											<li><a href="#">Leren armbanden</a></li>
 										</ul>
 									</div>
@@ -126,7 +194,7 @@
 								<div class="row hidden-sm hidden-xs">
 									<div class="SMmd-12">
 										<hr>
-										<a class="banner banner-1" href="producten-suikerpot-armbanden.html">
+										<a class="banner banner-1" href="producten-suikerpot-armbanden.php">
 											<img src="./img/banner05.jpg" alt="">
 											<div class="banner-caption text-center">
 												<h2 class="black-color">NIEUWE COLLECTIE</h2>
@@ -147,7 +215,7 @@
 											<li>
 												<h3 class="list-links-title">Zilveren kettingen</h3></li>
 											<li><a href="#">Zilveren ketting met grote bedel</a></li>
-											<li><a href="producten-kettingen.html">*Zilveren ketting met middelgrote bedel*</a></li>
+											<li><a href="producten-kettingen.php">*Zilveren ketting met middelgrote bedel*</a></li>
 											<li><a href="#">Zilveren ketting met kleine bedel</a></li>
 											<li><a href="#">Zilveren ketting zonder bedel</a></li>
 										</ul>
@@ -192,7 +260,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href="producten-ringen.html">*Ringen*</a></li>
+						<li><a href="producten-ringen.php">*Ringen*</a></li>
 						<li class="dropdown side-dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Custom made hangers <i class="fa fa-angle-right"></i></a>
 							<div class="custom-menu">
@@ -278,7 +346,7 @@
 				<div class="menu-nav">
 					<span class="menu-header">Heren of Dames? <i class="fa fa-bars"></i></span>
 					<ul class="menu-list">
-						<li><a href="index.html">*Home*</a></li>
+						<li><a href="index.php">*Home*</a></li>
 						<li class="dropdown mega-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Heren <i class="fa fa-caret-down"></i></a>
 							<div class="custom-menu">
 								<div class="row">
@@ -346,7 +414,7 @@
 											<li><a href="#">Zilveren bedelarmbanden</a></li>
 											<li><a href="#">Aluminium bedelarmbanden</a></li>
 											<li><a href="#">Messing bedelarmbanden</a></li>
-											<li><a href="producten-suikerpot-armbanden.html">*Suikerpot-collectie*</a></li>
+											<li><a href="producten-suikerpot-armbanden.php">*Suikerpot-collectie*</a></li>
 											<li><a href="#">Leren armbanden</a></li>
 										</ul>
 									</div>
@@ -364,7 +432,7 @@
 											<li>
 												<h3 class="list-links-title">Ringen</h3></li>
 											<li><a href="#">Gouden ring</a></li>
-											<li><a href="producten-ringen.html">*Zilveren ring*</a></li>
+											<li><a href="producten-ringen.php">*Zilveren ring*</a></li>
 											<li><a href="#">Aluminium ring</a></li>
 										</ul>
 									</div>
@@ -419,97 +487,204 @@
 	</div>
 	<!-- /categorieën -->
 
-
-	<!-- breadcrumb -->
+	<!-- BREADCRUMB -->
 	<div id="breadcrumb">
 		<div class="container">
 			<ul class="breadcrumb">
-				<li><a href="index.html">*Home*</a></li>
-				<li><a href="#">Dames</a></li>
-				<li><a href="#">Armbanden</a></li>
-				<li><a href="producten-suikerpot-armbanden.html">*Suikerpot Collectie*</a></li>
-				<li class="active">Live Love Laugh</li>
+				<li><a href="index.php">*Home*</a></li>
+				<li class="active">Afrekenen</li>
 			</ul>
 		</div>
 	</div>
-	<!-- /breadcrumb -->
+	<!-- /BREADCRUMB -->
+<?php
+					if(!empty($_SESSION["shopping_cart"]))
+					{
 
-	<!-- product -->
+						$total = 0;
+						foreach($_SESSION["shopping_cart"] as $keys => $values)
+						{
+					?>
+	<!-- section -->
 	<div class="section">
 		<!-- container -->
 		<div class="container">
-			<!-- row -> col-md-6 -->
+			<!-- row -->
 			<div class="row">
-				<!--  productinformatie -->
-				<div class="product product-details clearfix">
+				<form id="checkout-form" class="clearfix">
 					<div class="col-md-6">
-						<div id="product-main-view">
-							<div class="product-view">
-								<img src="./img/product02.jpeg" alt="">
+						<div class="billing-details">
+							<p>Heeft u al een account? <a href="#">Login</a></p>
+							<div class="section-title">
+								<h3 class="title">Verzendinformatie</h3>
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="voornaam" placeholder="Voornaam" >
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="achternaam" placeholder="Achternaam">
+							</div>
+							<div class="form-group">
+								<input class="input" type="email" name="email" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="adres" placeholder="Straatnaam + huisnummer">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="stad" placeholder="Stad">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="postcode" placeholder="Postcode (1234AA)">
+							</div>
+							<div class="form-group">
+								<input class="input" type="tel" name="tel" placeholder="Telefoonnummer">
 							</div>
 						</div>
 					</div>
+
 					<div class="col-md-6">
-						<div class="product-body">
-							<div class="product-label">
+						<div class="shiping-methods">
+							<div class="section-title">
+								<h4 class="title">Verzendmethodes</h4>
 							</div>
-							<h2 class="product-name">Live Love Laugh</h2>
-							<h3 class="product-price">€29.99 </h3>
-							<p><strong>Collectie:</strong> Armbanden</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-								dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<div class="product-options">
-								<ul class="size-option">
-									<li><span class="text-uppercase">Soort:</span></li>
-									<li class="active"><a href="#">Goud</a></li>
-								</ul>
+							<div class="input-checkbox">
+								<input type="radio" name="shipping" id="shipping-1" checked>
+								<label for="shipping-1">Standaard verzending (1 - 4 werkdagen)</label>
+								<div class="caption">
+									<p>Momenteel is alleen standaard verzending mogelijk.<p>
+								</div>
 							</div>
-								<div class="qty-input">
-									<span class="text-uppercase">Aantal: </span>
-									<input class="input" type="number" min="1" value="1">
+						</div>
+
+						<div class="payments-methods">
+							<div class="section-title">
+								<h4 class="title">Betaalmethodes</h4>
+							</div>
+					
+							<div class="input-checkbox">
+								<input type="radio" name="payments" id="payments-1" checked>
+								<label for="payments-1">Overschrijving</label>
+									<p>Momenteel is het alleen mogelijk om te betalen via een overschrijving. Excuses voor het ongemak.<p>
 								</div>
-								<div class="pull-right ">
-									<button class="blauwe-btn add-to-cart"><i class="fa fa-shopping-cart"></i>Toevoegen aan winkelmandje</button>
-								</div>
+							</div>
 						</div>
 					</div>
+
 					<div class="col-md-12">
-						<div class="product-tab">
-							<ul class="tab-nav">
-								<li class="active"><a data-toggle="tab" href="#tab1">Beschrijving</a></li>
-							</ul>
-							<div class="tab-content">
-								<div id="tab1" class="tab-pane fade in active">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-										irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-								</div>
+						<div class="order-summary clearfix">
+							<div class="section-title">
+								<h3 class="title">Uw winkelmandje</h3>
+							</div>
+							<table class="shopping-cart-table table">
+								<thead>
+									<tr>
+										<th>Product</th>
+										<th></th>
+										<th class="text-center">Prijs</th>
+										<th class="text-center">Hoeveelheid</th>
+										<th class="text-center">Totaal</th>
+										<th class="text-right">Item verwijderen?</th>
+									</tr>
+								</thead>
+
+								<?php
+					if(!empty($_SESSION["shopping_cart"]))
+					{
+						$total = 0;
+						foreach($_SESSION["shopping_cart"] as $keys => $values)
+						{
+					?>
+								<tbody>
+
+
+									<tr>
+											<td class="thumb"></td>
+
+										<td class="details">
+											<strong > <?php echo $values["item_name"]; ?> <strong>
+										</td>
+
+
+										<td class="price text-center"><strong class= "sand-color">€ <?php echo $values["item_price"]; ?></strong></del>
+
+										</td>
+
+
+										<td class="qty text-center">
+											<?php echo $values["item_quantity"]; ?>
+
+										</td>
+
+
+										<td class="total text-center"><strong class="primary-color">€ <?php echo number_format($values["item_quantity"] * $values["item_price"], 2);?></strong></td>
+
+
+										<td class="text-right">
+
+											<a href="afrekenen.php?action=delete&id=<?php echo $values["item_id"]; ?>" class="main-btn icon-btn" >
+
+
+
+											<i class="fa fa-close">
+												
+
+											</i></a>
+
+										</td>
+									
+
+									</tr>
+
+					<?php
+							$total = $total + ($values["item_quantity"] * $values["item_price"]);
+						}
+					?>
+								</tbody>
+								<tfoot>
+									
+									<tr>
+										<th class="empty" colspan="3"></th>
+										<th><h4>Totaalbedrag<h4></th>
+										<th colspan="2" class="total">
+											€ <?php echo number_format($total, 2); ?>
+
+
+										</th>
+
+
+									</tr>
+								</tfoot>
+							</table>
+							<div class="pull-right">
+								<button class="blauwe-btn">Plaats bestelling</button>
 							</div>
 						</div>
+
+					<?php
+					}
+					?>
+
 					</div>
-				</div>
-				<!-- /productinformatie -->
+				</form>
 			</div>
-			<!-- /row -> col-md-6 -->
+			<!-- /row -->
 		</div>
 		<!-- /container -->
 	</div>
-	<!-- /product -->
-
+	<!-- /section -->
 	
-
-
-	<!-- footer -->
+<!-- footer -->
 	<footer id="footer" class="section grijs-gebied">
 		<!-- container -->
 		<div class="container">
-			<!-- row --> 
+			<!-- row -->
 			<div class="row">
 				<!-- footer bedrijf -->
 				<div class="col-md-4 col-sm-6 col-xs-6">
 					<div class="footer">
 						<!-- footer logo -->
 						<div class="footer-logo">
-							<a class="logo" href="index.html">
+							<a class="logo" href="index.php">
 		            <img src="./img/logo-footer.png" alt="">
 		          </a>
 						</div>
@@ -525,8 +700,6 @@
 				</div>
 				<!-- /footer bedrijf-->
 
-			
-
 				<div class="clearfix visible-sm visible-xs"></div>
 
 				<!-- footer klantenservice -->
@@ -538,11 +711,13 @@
 							<li><a href="#">Retourneren</a></li>
 							<li><a href="#">Hoe verzenden wij onze producten?</a></li>
 							<li><a href="#">FAQ</a></li>
-							<li><a href="contact-form.html">*Contactformulier*</a></li>
 						</ul>
 					</div>
 				</div>
 				<!-- /footer klantenservice -->
+
+
+
 
 				<!-- footer nieuwsbrief -->
 				<div class="col-md-4 col-sm-6 col-xs-6">
@@ -576,6 +751,11 @@
 <div class="footer-copyright">
 	<h5>© 2018-2020 Seasons & the Sea · Alle rechten voorbehouden.</h5>
 </div>
+
+<?php
+					}
+				}
+					?>
 
 </body>
 
