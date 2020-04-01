@@ -539,10 +539,8 @@ $query = "SELECT * FROM tbl_product WHERE id=4 ";
 						</div>
 					</div>
 					<div class="col-md-6">
-						<form method="post" action="product-ring.php?action=add&id=<?php echo $row["id"]; ?>">
+						<form method="post" action="afrekenen.php?action=add&id=<?php echo $row["id"]; ?>">
 						<div class="product-body">
-							<div class="product-label">
-							</div>
 							<h2 class="product-name"><?php echo $row["name"]; ?></h2>
 							<h3 class="product-price">€<?php echo $row["price"]; ?></h3>
 							<p><strong>Collectie:</strong> Ringen</p>
@@ -562,15 +560,17 @@ $query = "SELECT * FROM tbl_product WHERE id=4 ";
 									<input class="input" name="quantity" type="number" min="1" max= "7" value="1">
 								</div>
 								<div class="pull-right ">
-									<input type="hidden" name="hidden_name" value="<?php echo $row["name"]; ?>" />
+									<input type="hidden" name="hidden_name" value="<?php echo $row["name"];
+								 ?>" />
 
 									<input type="hidden" name="hidden_price" value="<?php echo $row["price"]; ?>" />
 									<input type="submit" name="add_to_cart" value="Toevoegen aan winkelmandje" class="blauwe-btn add-to-cart">
 								</div>
 							</div>
 						</div>
+						</form>
 					</div>
-				</form>
+				
 					<?php
 					}
 				}
