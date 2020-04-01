@@ -1,8 +1,6 @@
 Wat moet er nog gebeuren aan ons informatica-eindproject?
 
-- css-classes aanpassen en deze ook in de html bestanden veranderen
 
-- javascript versimpelen
 - php
 	- werkende webshop
 	- werkend inlogsysteem
