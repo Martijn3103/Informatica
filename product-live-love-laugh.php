@@ -110,7 +110,6 @@ if(isset($_POST["add_to_cart"]))
 						<li class="header-cart">
 								<div class="header-btns-icon">
 									<i class="fa fa-shopping-cart"></i>
-									<span class="qty">3</span>
 								</div>
 								<strong class="text-uppercase"><a href="afrekenen.php">*Winkelmandje:*</a></strong>
 																<br>
@@ -485,7 +484,7 @@ if(isset($_POST["add_to_cart"]))
 		<div class="container">
 			<ul class="breadcrumb">
 				<li><a href="index.php">*Home*</a></li>
-				<li><a href="#">Dames</a></li>
+				<li><a href="#">*Dames*</a></li>
 				<li><a href="#">Armbanden</a></li>
 				<li><a href="producten-suikerpot-armbanden.php">*Suikerpot Collectie*</a></li>
 				<li class="active">Live Love Laugh</li>
@@ -518,6 +517,16 @@ $query = "SELECT * FROM tbl_product WHERE id=1 ";
 								<img src="./img/product02.jpeg" alt="">
 							</div>
 						</div>
+						
+						<div id="product-view">
+							<div class="product-view">
+								<img src="./img/product02.jpeg" alt="">
+							</div>
+							
+						</div>
+						
+						
+						
 					</div>
 					<div class="col-md-6">
 						<form method="post" action="afrekenen.php?action=add&id=<?php echo $row["id"]; ?>">
