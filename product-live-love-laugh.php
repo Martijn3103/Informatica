@@ -69,7 +69,6 @@
 						<li class="header-cart">
 								<div class="header-btns-icon">
 									<i class="fa fa-shopping-cart"></i>
-									<span class="qty">3</span>
 								</div>
 								<strong class="text-uppercase"><a href="afrekenen.php">*Winkelmandje:*</a></strong>
 								<br>
@@ -425,7 +424,7 @@
 		<div class="container">
 			<ul class="breadcrumb">
 				<li><a href="index.php">*Home*</a></li>
-				<li><a href="#">Dames</a></li>
+				<li><a href="#">*Dames*</a></li>
 				<li><a href="#">Armbanden</a></li>
 				<li><a href="producten-suikerpot-armbanden.php">*Suikerpot Collectie*</a></li>
 				<li class="active">Live Love Laugh</li>
@@ -448,6 +447,16 @@
 								<img src="./img/product02.jpeg" alt="">
 							</div>
 						</div>
+						
+						<div id="product-view">
+							<div class="product-view">
+								<img src="./img/product02.jpeg" alt="">
+							</div>
+							
+						</div>
+						
+						
+						
 					</div>
 					<div class="col-md-6">
 						<div class="product-body">

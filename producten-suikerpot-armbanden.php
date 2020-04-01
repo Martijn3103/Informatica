@@ -69,7 +69,6 @@
 						<li class="header-cart">
 								<div class="header-btns-icon">
 									<i class="fa fa-shopping-cart"></i>
-									<span class="qty">3</span>
 								</div>
 								<strong class="text-uppercase"><a href="afrekenen.php">*Winkelmandje:*</a></strong>
 								<br>
@@ -461,7 +460,6 @@
 										<h2 class="product-name"><a href="#">Every moment matters</a></h2>
 										<div class="product-btns">
 
-											<button class="blauwe-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Toevoegen aan winkelmandje</button>
 										</div>
 									</div>
 								</div>
@@ -481,7 +479,6 @@
 										<h2 class="product-name"><a href="product-live-love-laugh.php">*Live, love, laugh*</a></h2>
 										<div class="product-btns">
 
-											<button class="blauwe-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Toevoegen aan winkelmandje</button>
 										</div>
 									</div>
 								</div>
@@ -507,7 +504,6 @@
 										<h2 class="product-name"><a href="product-moon.php">*I love you to the moon and back*</a></h2>
 										<div class="product-btns">
 
-											<button class="blauwe-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Toevoegen aan winkelmandje</button>
 										</div>
 									</div>
 								</div>
@@ -531,7 +527,6 @@
 										<h2 class="product-name"><a href="#">Hello sunshine</a></h2>
 										<div class="product-btns">
 
-											<button class="blauwe-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Toevoegen aan winkelmandje</button>
 										</div>
 									</div>
 								</div>

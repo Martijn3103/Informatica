@@ -69,7 +69,6 @@
 							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 								<div class="header-btns-icon">
 									<i class="fa fa-shopping-cart"></i>
-									<span class="qty">3</span>
 								</div>
 								<strong class="text-uppercase">*Mijn winkelmandje:*</strong>
 								<br>
@@ -292,7 +291,7 @@
 											<li><a href="#">Leren armbanden</a></li>
 											<li><a href="#">Zilveren armbanden</a></li>
 											<li><a href="#">Aluminium ringen</a></li>
-											<li><a href="#">Zilveren ringen</a></li>
+											<li><a href="#">*Zilveren ringen*</a></li>
 										</ul>
 									</div>
 									<div class="col-md-4">
@@ -328,7 +327,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="dropdown mega-dropdown full-width"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Dames <i class="fa fa-caret-down"></i></a>
+						<li class="dropdown mega-dropdown full-width"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">*Dames* <i class="fa fa-caret-down"></i></a>
 							<div class="custom-menu">
 								<div class="row">
 									<div class="col-md-3">
@@ -447,24 +446,18 @@
 							<div class="product-view">
 								<img src="./img/moon01.jpeg" alt="">
 							</div>
-							<div class="product-view">
-								<img src="./img/moon02.jpeg" alt="">
-							</div>
 						</div>
+						
+						
 						<div id="product-view">
 							<div class="product-view">
-								<img src="./img/thumb-moon01.jpeg" alt="">
+								<img src="./img/moon01.jpeg" alt="">
 							</div>
-							<div class="product-view">
-								<img src="./img/thumb-moon02.jpeg" alt="">
-							</div>
-							<div class="product-view">
-								<img src="./img/thumb-moon01.jpeg" alt="">
-							</div>
-							<div class="product-view">
-								<img src="./img/thumb-moon02.jpeg" alt="">
-							</div>
+							
 						</div>
+						
+						
+						
 					</div>
 					<div class="col-md-6">
 						<div class="product-body">
@@ -481,7 +474,6 @@
 								<ul class="size-option">
 									<li><span class="text-uppercase">Soort:</span></li>
 									<li class="active"><a href="#">Met icoon</a></li>
-									<li><a href="#">Met letters (moon)</a></li>
 								</ul>
 							</div>
 
