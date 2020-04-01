@@ -76,7 +76,7 @@ $connect = mysqli_connect("localhost", "root", "", "testing");
 						<li class="header-cart">
 								<div class="header-btns-icon">
 									<i class="fa fa-shopping-cart"></i>
-									<span class="qty">3</span>
+									
 								</div>
 								<strong class="text-uppercase"><a href="afrekenen.php">*Winkelmandje:*</a></strong>
 								<br>
@@ -623,9 +623,6 @@ $connect = mysqli_connect("localhost", "root", "", "testing");
 </div>
 
 
-<?php
-					
-					?>
 
 </body>
 

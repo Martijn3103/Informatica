@@ -1,3 +1,61 @@
+<?php 
+session_start();
+$connect = mysqli_connect("localhost", "root", "", "testing");
+
+if(isset($_POST["add_to_cart"]))
+{
+	if(isset($_SESSION["shopping_cart"]))
+	{
+		$item_array_id = array_column($_SESSION["shopping_cart"], "item_id");
+		if(!in_array($_GET["id"], $item_array_id))
+		{
+			$count = count($_SESSION["shopping_cart"]);
+			$item_array = array(
+				'item_id'			=>	$_GET["id"],
+				'item_name'			=>	$_POST["hidden_name"],
+				'item_price'		=>	$_POST["hidden_price"],
+				'item_quantity'		=>	$_POST["quantity"]
+			);
+			$_SESSION["shopping_cart"][$count] = $item_array;
+		}
+		else
+		
+		{
+			echo '<script>alert("Dit product zit al in uw winkelmandje")</script>';
+		}
+	}
+	else
+	{
+		$item_array = array(
+			'item_id'			=>	$_GET["id"],
+			'item_name'			=>	$_POST["hidden_name"],
+			'item_price'		=>	$_POST["hidden_price"],
+			'item_quantity'		=>	$_POST["quantity"]
+		);
+		$_SESSION["shopping_cart"][0] = $item_array;
+	}
+}
+
+if(isset($_GET["action"]))
+{
+	if($_GET["action"] == "delete")
+	{
+		foreach($_SESSION["shopping_cart"] as $keys => $values)
+		{
+			if($values["item_id"] == $_GET["id"])
+			{
+				unset($_SESSION["shopping_cart"][$keys]);
+				echo '<script>alert("Product uit uw winkelmandje verwijderd")</script>';
+				echo '<script>window.location="product-ring.php"</script>';
+			}
+		}
+	}
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 
 <head>
@@ -69,11 +127,29 @@
 						<li class="header-cart">
 								<div class="header-btns-icon">
 									<i class="fa fa-shopping-cart"></i>
-									<span class="qty">3</span>
 								</div>
 								<strong class="text-uppercase"><a href="afrekenen.php">*Winkelmandje:*</a></strong>
 								<br>
-								<span>*€35,20*</span>
+								
+									<?php
+					
+						$total = 0;
+						foreach($_SESSION["shopping_cart"] as $keys => $values)
+						{
+												
+							$total = $total + ($values["item_quantity"] * $values["item_price"]);
+						}
+					?>
+
+							<span> €
+
+								<?php echo number_format($total, 2); ?>
+
+
+
+
+
+								</span>
 						</li>
 						<!-- /Winkelmandje -->
 
@@ -432,6 +508,14 @@
 	</div>
 	<!-- /breadcrumb -->
 
+	<?php
+$query = "SELECT * FROM tbl_product WHERE id=4 ";
+				$result = mysqli_query($connect, $query);
+				if(mysqli_num_rows($result) > 0)
+				{
+					while($row = mysqli_fetch_array($result))
+					{
+				?>
 	<!-- product -->
 	<div class="section">
 		<!-- container -->
@@ -455,11 +539,12 @@
 						</div>
 					</div>
 					<div class="col-md-6">
+						<form method="post" action="product-ring.php?action=add&id=<?php echo $row["id"]; ?>">
 						<div class="product-body">
 							<div class="product-label">
 							</div>
-							<h2 class="product-name">Ocean Wave</h2>
-							<h3 class="product-price">€15,95 </h3>
+							<h2 class="product-name"><?php echo $row["name"]; ?></h2>
+							<h3 class="product-price">€<?php echo $row["price"]; ?></h3>
 							<p><strong>Collectie:</strong> Ringen</p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
 								dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -474,14 +559,22 @@
 							<div class="product-btns">
 								<div class="qty-input">
 									<span class="text-uppercase">Aantal: </span>
-									<input class="input" type="number" min="1" value="1">
+									<input class="input" name="quantity" type="number" min="1" max= "7" value="1">
 								</div>
 								<div class="pull-right ">
-									<button class="blauwe-btn add-to-cart"><i class="fa fa-shopping-cart"></i>Toevoegen aan winkelmandje</button>
+									<input type="hidden" name="hidden_name" value="<?php echo $row["name"]; ?>" />
+
+									<input type="hidden" name="hidden_price" value="<?php echo $row["price"]; ?>" />
+									<input type="submit" name="add_to_cart" value="Toevoegen aan winkelmandje" class="blauwe-btn add-to-cart">
 								</div>
 							</div>
 						</div>
 					</div>
+				</form>
+					<?php
+					}
+				}
+			?>
 					<div class="col-md-12">
 						<div class="product-tab">
 							<ul class="tab-nav">

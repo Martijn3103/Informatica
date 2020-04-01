@@ -19,6 +19,7 @@ if(isset($_POST["add_to_cart"]))
 			$_SESSION["shopping_cart"][$count] = $item_array;
 		}
 		else
+		
 		{
 			echo '<script>alert("Dit product zit al in uw winkelmandje")</script>';
 		}
@@ -44,16 +45,14 @@ if(isset($_GET["action"]))
 			if($values["item_id"] == $_GET["id"])
 			{
 				unset($_SESSION["shopping_cart"][$keys]);
-				echo '<script>alert("Product verwijderd")</script>';
+				echo '<script>alert("Product uit uw winkelmandje verwijderd")</script>';
 				echo '<script>window.location="afrekenen.php"</script>';
 			}
 		}
 	}
 }
 
-
 ?>
-
 
 <!DOCTYPE html>
 
@@ -130,7 +129,8 @@ if(isset($_GET["action"]))
 								</div>
 								<strong class="text-uppercase"><a href="afrekenen.php">*Winkelmandje:*</a></strong>
 								<br>
-								<?php
+								
+									<?php
 					
 						$total = 0;
 						foreach($_SESSION["shopping_cart"] as $keys => $values)
@@ -139,8 +139,15 @@ if(isset($_GET["action"]))
 							$total = $total + ($values["item_quantity"] * $values["item_price"]);
 						}
 					?>
-								<span> €
-		<?php echo number_format($total, 2); ?>
+
+							<span> €
+
+								<?php echo number_format($total, 2); ?>
+
+
+
+
+
 								</span>
 						</li>
 						<!-- /Winkelmandje -->
@@ -497,14 +504,7 @@ if(isset($_GET["action"]))
 		</div>
 	</div>
 	<!-- /BREADCRUMB -->
-<?php
-					if(!empty($_SESSION["shopping_cart"]))
-					{
 
-						$total = 0;
-						foreach($_SESSION["shopping_cart"] as $keys => $values)
-						{
-					?>
 	<!-- section -->
 	<div class="section">
 		<!-- container -->
@@ -578,22 +578,22 @@ if(isset($_GET["action"]))
 							<table class="shopping-cart-table table">
 								<thead>
 									<tr>
-										<th>Product</th>
 										<th></th>
+										<th class="text-center">Product</th>
 										<th class="text-center">Prijs</th>
 										<th class="text-center">Hoeveelheid</th>
 										<th class="text-center">Totaal</th>
 										<th class="text-right">Item verwijderen?</th>
 									</tr>
 								</thead>
-
 								<?php
-					if(!empty($_SESSION["shopping_cart"]))
+if(!empty($_SESSION["shopping_cart"]))
 					{
 						$total = 0;
 						foreach($_SESSION["shopping_cart"] as $keys => $values)
 						{
 					?>
+								
 								<tbody>
 
 
@@ -601,7 +601,7 @@ if(isset($_GET["action"]))
 											<td class="thumb"></td>
 
 										<td class="details">
-											<strong > <?php echo $values["item_name"]; ?> <strong>
+											<strong ><?php echo $values["item_name"]; ?> <strong>
 										</td>
 
 
@@ -621,11 +621,11 @@ if(isset($_GET["action"]))
 
 										<td class="text-right">
 
-											<a href="afrekenen.php?action=delete&id=<?php echo $values["item_id"]; ?>" class="main-btn icon-btn" >
+											<a href="afrekenen.php?action=delete&id=<?php echo $values["item_id"]; ?>" class="main-btn icon-btn">x
 
 
 
-											<i class="fa fa-close">
+											
 												
 
 											</i></a>
@@ -635,7 +635,7 @@ if(isset($_GET["action"]))
 
 									</tr>
 
-					<?php
+<?php
 							$total = $total + ($values["item_quantity"] * $values["item_price"]);
 						}
 					?>
@@ -646,25 +646,33 @@ if(isset($_GET["action"]))
 										<th class="empty" colspan="3"></th>
 										<th><h4>Totaalbedrag<h4></th>
 										<th colspan="2" class="total">
-											€ <?php echo number_format($total, 2); ?>
-
+											€  <?php echo number_format($total, 2); ?>
 
 										</th>
 
 
 									</tr>
+
 								</tfoot>
+
 							</table>
 							<div class="pull-right">
 								<button class="blauwe-btn">Plaats bestelling</button>
+
 							</div>
+<?php
+					}
+
+				
+			
+
+					?>
 						</div>
 
-					<?php
-					}
-					?>
+					
 
 					</div>
+
 				</form>
 			</div>
 			<!-- /row -->
@@ -672,7 +680,7 @@ if(isset($_GET["action"]))
 		<!-- /container -->
 	</div>
 	<!-- /section -->
-	
+
 <!-- footer -->
 	<footer id="footer" class="section grijs-gebied">
 		<!-- container -->
@@ -752,10 +760,6 @@ if(isset($_GET["action"]))
 	<h5>© 2018-2020 Seasons & the Sea · Alle rechten voorbehouden.</h5>
 </div>
 
-<?php
-					}
-				}
-					?>
 
 </body>
 
