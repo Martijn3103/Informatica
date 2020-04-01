@@ -125,7 +125,6 @@ if(isset($_GET["action"]))
 						<li class="header-cart">
 								<div class="header-btns-icon">
 									<i class="fa fa-shopping-cart"></i>
-									<span class="qty">3</span>
 								</div>
 								<strong class="text-uppercase"><a href="afrekenen.php">*Winkelmandje:*</a></strong>
 								<br>
@@ -551,7 +550,7 @@ if(isset($_GET["action"]))
 								<input type="radio" name="shipping" id="shipping-1" checked>
 								<label for="shipping-1">Standaard verzending (1 - 4 werkdagen)</label>
 								<div class="caption">
-									<p>Momenteel is alleen standaard verzending mogelijk.<p>
+									<p>Momenteel is alleen standaard verzending mogelijk. Uw bestelling wordt gereed gemaakt en verzonden zodra de betaling is ontvangen.<p>
 								</div>
 							</div>
 						</div>

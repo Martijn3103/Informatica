@@ -1,3 +1,10 @@
+<?php 
+session_start();
+$connect = mysqli_connect("localhost", "root", "", "testing");
+
+?>
+
+
 <!DOCTYPE html>
 
 <head>
@@ -24,13 +31,13 @@
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
-
+	
 </head>
 
 <body>
-<!-- header -->
+	<!-- header -->
 	<header>
-				<div id="header">
+		<div id="header">
 			<div class="container">
 				<div class="pull-left">
 					<div class="header-logo">
@@ -69,10 +76,30 @@
 						<li class="header-cart">
 								<div class="header-btns-icon">
 									<i class="fa fa-shopping-cart"></i>
+									
 								</div>
 								<strong class="text-uppercase"><a href="afrekenen.php">*Winkelmandje:*</a></strong>
 								<br>
-								<span>*€35,20*</span>
+								
+									<?php
+					
+						$total = 0;
+						foreach($_SESSION["shopping_cart"] as $keys => $values)
+						{
+												
+							$total = $total + ($values["item_quantity"] * $values["item_price"]);
+						}
+					?>
+
+							<span> €
+
+								<?php echo number_format($total, 2); ?>
+
+
+
+
+
+								</span>
 						</li>
 						<!-- /Winkelmandje -->
 
