@@ -616,6 +616,7 @@ $connect = mysqli_connect("localhost", "root", "", "testing");
 							<li><a href="#">Retourneren</a></li>
 							<li><a href="#">Hoe verzenden wij onze producten?</a></li>
 							<li><a href="#">FAQ</a></li>
+						
 						</ul>
 					</div>
 				</div>
@@ -630,7 +631,7 @@ $connect = mysqli_connect("localhost", "root", "", "testing");
 							<div class="form-group">
 								<input class="input" placeholder="Vul hier uw email adres in.">
 							</div>
-							<button class="blauwe-btn">*Ja, ik wil graag de nieuwsbrief ontvangen.*</button>
+							<button class="blauwe-btn">Ja, ik wil graag de nieuwsbrief ontvangen.</button>
 						</form>
 					</div>
 				</div>

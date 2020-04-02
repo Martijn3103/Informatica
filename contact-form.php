@@ -495,7 +495,7 @@
 							<li><a href="#">Retourneren</a></li>
 							<li><a href="#">Hoe verzenden wij onze producten?</a></li>
 							<li><a href="#">FAQ</a></li>
-							<li><a href="contact-form.html">*Contactformulier*</a></li>
+							<li><a href="contact-form.php">*Contactformulier*</a></li>
 						</ul>
 					</div>
 				</div>
@@ -510,7 +510,7 @@
 							<div class="form-group">
 								<input class="input" placeholder="Vul hier uw email adres in.">
 							</div>
-							<button class="blauwe-btn">*Ja, ik wil graag de nieuwsbrief ontvangen.*</button>
+							<button class="blauwe-btn">Ja, ik wil graag de nieuwsbrief ontvangen.</button>
 						</form>
 					</div>
 				</div>

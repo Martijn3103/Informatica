@@ -556,10 +556,9 @@ $query = "SELECT * FROM tbl_product WHERE id=2 ";
 							<h2 class="product-name"><?php echo $row["name"]; ?></h2>
 							<h3 class="product-price sand-color">€ <?php echo $row["price"]; ?></h3><h3><del class="product-old-price"> <?php echo number_format((float)$row["price"]/80*100 , 2,); ?> </del></h3>
 							<p><strong>Collectie:</strong> Armbanden</p>
-							<p>kleur: Goud</p>
-							<p>Materiaal: stainless steel </p>
-                            <p>De bangle is 3 mm breed en heeft een diameter van 6 cm</p>
-							<p>One size</p>
+							
+							<p>Bangles, wij houden ervan! Deze bangle komt uit onze Moon Collection en op de bangle staat ‘Love you to the moon & back’ gegrafeerd. Maak jouw armparty helemaal compleet door deze bangle te combineren met de leuke armbandjes uit de collectie.</p>
+							
 							<div class="product-options">
 								<ul class="size-option">
 									<li><span class="text-uppercase">Soort:</span></li>
@@ -595,7 +594,13 @@ $query = "SELECT * FROM tbl_product WHERE id=2 ";
 							</ul>
 							<div class="tab-content">
 								<div id="tab1" class="tab-pane fade in active">
-									<p>Bangles, wij houden ervan! Deze bangle komt uit onze Moon Collection en op de bangle staat ‘Love you to the moon & back’ gegrafeerd. Maak jouw armparty helemaal compleet door deze bangle te combineren met de leuke armbandjes uit de collectie.</p>
+							
+								<p>kleur: Goud. <br>
+							Materiaal: stainless steel.<br>
+                            De bangle is 3 mm breed en heeft een diameter van 6 cm.<br>
+							One size.<br>
+							Zelfgemaakt in Nederland.
+							</p>
 								</div>
 							</div>
 						</div>
@@ -652,6 +657,7 @@ $query = "SELECT * FROM tbl_product WHERE id=2 ";
 							<li><a href="#">Retourneren</a></li>
 							<li><a href="#">Hoe verzenden wij onze producten?</a></li>
 							<li><a href="#">FAQ</a></li>
+							
 						</ul>
 					</div>
 				</div>
@@ -666,7 +672,7 @@ $query = "SELECT * FROM tbl_product WHERE id=2 ";
 							<div class="form-group">
 								<input class="input" placeholder="Vul hier uw email adres in.">
 							</div>
-							<button class="blauwe-btn">*Ja, ik wil graag de nieuwsbrief ontvangen.*</button>
+							<button class="blauwe-btn">Ja, ik wil graag de nieuwsbrief ontvangen.</button>
 						</form>
 					</div>
 				</div>

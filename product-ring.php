@@ -544,8 +544,7 @@ $query = "SELECT * FROM tbl_product WHERE id=4 ";
 							<h2 class="product-name"><?php echo $row["name"]; ?></h2>
 							<h3 class="product-price">€<?php echo $row["price"]; ?></h3>
 							<p><strong>Collectie:</strong> Ringen</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-								dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Het is waar wat ze zeggen: een goed gevoel komt met de golven. Deze ring is ontworpen met de zee in gedachten. Met deze ring heb je de zee altijd bij je!</p>
 							<div class="product-options">
 								<ul class="size-option">
 									<li><span class="text-uppercase">Soort:</span></li>
@@ -582,8 +581,11 @@ $query = "SELECT * FROM tbl_product WHERE id=4 ";
 							</ul>
 							<div class="tab-content">
 								<div id="tab1" class="tab-pane fade in active">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicin lit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-										irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<p>
+									Materiaal: 925 sterling zilver.<br>
+									One size, de ring is verstelbaar.<br>
+									Zelfgemaakt in Nederland. 
+								 </p>
 								</div>
 							</div>
 						</div>
@@ -638,6 +640,7 @@ $query = "SELECT * FROM tbl_product WHERE id=4 ";
 							<li><a href="#">Retourneren</a></li>
 							<li><a href="#">Hoe verzenden wij onze producten?</a></li>
 							<li><a href="#">FAQ</a></li>
+						
 						</ul>
 					</div>
 				</div>
@@ -652,7 +655,7 @@ $query = "SELECT * FROM tbl_product WHERE id=4 ";
 							<div class="form-group">
 								<input class="input" placeholder="Vul hier uw email adres in.">
 							</div>
-							<button class="blauwe-btn">*Ja, ik wil graag de nieuwsbrief ontvangen.*</button>
+							<button class="blauwe-btn">Ja, ik wil graag de nieuwsbrief ontvangen.</button>
 						</form>
 					</div>
 				</div>

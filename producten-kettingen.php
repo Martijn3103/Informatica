@@ -501,13 +501,13 @@ $connect = mysqli_connect("localhost", "root", "", "testing");
 											<span>Nieuw</span>
 											<span class="sale">-40%</span>
 										</div>
-				                        <a href="product-ketting.php"><button class="main-btn quick-view"><i class="fa fa-search-plus"></i> *Bekijk dit artikel*</button></a>
+				                        <a href="#"><button class="main-btn quick-view"><i class="fa fa-search-plus"></i> Bekijk dit artikel</button></a>
 										<img src="./img/product06.jpeg" alt="">
 									</div>
 									<div class="product-body">
 										<h3 class="product-price">€11.95 <del class="product-old-price">€19.95</del></h3>
 
-										<h2 class="product-name"><a href="product-ketting.php">*Tropical Sea*</a></h2>
+										<h2 class="product-name"><a href="#">Tropical Sea</a></h2>
 										<div class="product-btns">
 
 										</div>
@@ -526,13 +526,13 @@ $connect = mysqli_connect("localhost", "root", "", "testing");
 											<span>Nieuw</span>
 											<span class="sale">-40%</span>
 										</div>
-				                        <a href="product-ketting.php"><button class="main-btn quick-view"><i class="fa fa-search-plus"></i> *Bekijk dit artikel*</button></a>
+				                        <a href="#"><button class="main-btn quick-view"><i class="fa fa-search-plus"></i> Bekijk dit artikel</button></a>
 										<img src="./img/product07.jpeg" alt="">
 									</div>
 									<div class="product-body">
 										<h3 class="product-price">€11.95 <del class="product-old-price">€19.95</del></h3>
 
-										<h2 class="product-name"><a href="product-ketting.php">*Tropical Sea*</a></h2>
+										<h2 class="product-name"><a href="#">Tropical Sea</a></h2>
 										<div class="product-btns">
 
 										</div>
@@ -551,13 +551,13 @@ $connect = mysqli_connect("localhost", "root", "", "testing");
 											<span>Nieuw</span>
 											<span class="sale">-40%</span>
 										</div>
-				                        <a href="product-ketting.php"><button class="main-btn quick-view"><i class="fa fa-search-plus"></i> *Bekijk dit artikel*</button></a>
+				                        <a href="#"><button class="main-btn quick-view"><i class="fa fa-search-plus"></i> Bekijk dit artikel</button></a>
 										<img src="./img/product08.jpeg" alt="">
 									</div>
 									<div class="product-body">
 										<h3 class="product-price">€11.95 <del class="product-old-price">€19.95</del></h3>
 
-										<h2 class="product-name"><a href="product-ketting.php">*Tropical Sea*</a></h2>
+										<h2 class="product-name"><a href="#">Tropical Sea</a></h2>
 										<div class="product-btns">
 
 										</div>
@@ -622,6 +622,7 @@ $connect = mysqli_connect("localhost", "root", "", "testing");
 							<li><a href="#">Retourneren</a></li>
 							<li><a href="#">Hoe verzenden wij onze producten?</a></li>
 							<li><a href="#">FAQ</a></li>
+							
 						</ul>
 					</div>
 				</div>
@@ -636,7 +637,7 @@ $connect = mysqli_connect("localhost", "root", "", "testing");
 							<div class="form-group">
 								<input class="input" placeholder="Vul hier uw email adres in.">
 							</div>
-							<button class="blauwe-btn">*Ja, ik wil graag de nieuwsbrief ontvangen.*</button>
+							<button class="blauwe-btn">Ja, ik wil graag de nieuwsbrief ontvangen.</button>
 						</form>
 					</div>
 				</div>
