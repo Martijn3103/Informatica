@@ -595,7 +595,7 @@ $query = "SELECT * FROM tbl_product WHERE id=2 ";
 							<div class="tab-content">
 								<div id="tab1" class="tab-pane fade in active">
 							
-								<p>kleur: Goud. <br>
+								<p>Kleur: Goud. <br>
 							Materiaal: stainless steel.<br>
                             De bangle is 3 mm breed en heeft een diameter van 6 cm.<br>
 							One size.<br>
