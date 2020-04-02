@@ -1,0 +1,99 @@
+Index
+
+col-xs-6 -> 3x
+
+col-sm-6 -> 6x
+
+col-md-12 -> 2x
+col-md-3 -> 7x
+col-md-4 -> 14x
+
+GEEN COL-LG
+
+
+
+
+
+-------------------
+
+BLANK
+
+col-xs-6 -> 3x
+
+col-sm-6 -> 3x
+
+col-md-12 -> 2x
+col-md-3 -> 7x
+col-md-4 -> 12x
+
+GEEN COL-LG
+
+
+--------------------
+
+Product-page
+
+col-xs-6 -> 7x
+
+col-sm-6 -> 7x
+
+col-md-12 -> 4x
+col-md-3 -> 11x
+col-md-4 -> 12x
+col-md-6 -> 4x
+
+GEEN COL-LG
+
+
+--------------------
+
+Products
+
+col-xs-6 -> 12x
+
+col-sm-6 -> 12x
+
+col-md-12 -> 2x
+col-md-3 -> 8x
+col-md-4 -> 21x
+col-md-9 -> 1x
+
+GEEN COL-LG
+
+
+
+
+---------------------
+
+Checkout
+
+col-xs-6 -> 3x
+
+col-sm-6 -> 3x
+
+col-md-12 -> 3x
+col-md-3 -> 7x
+col-md-4 -> 12x
+col-md-6 -> 2x
+
+GEEN COL-LG
+
+
+--------------------
+
+Gebruik:
+
+xs:
+6
+
+sm:
+6
+
+md:
+12
+3
+4
+6
+9
+
+GEEN COL-LG

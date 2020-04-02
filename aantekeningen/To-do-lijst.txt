@@ -1,0 +1,24 @@
+Wat moet er nog gebeuren aan ons informatica-eindproject?
+
+
+- php
+	- werkende webshop
+	- werkend inlogsysteem
+	- werkende nieuwsbrief
+
+- beschrijvingen aan producten toevoegen
+
+- alles grondig controleren (fouten m.b.t. kleuren, taalgebruik, is het simpel genoeg (geloofwaardig)?, e.d.)
+
+
+
+
+
+Vrijdag =			HTML
+Zaterdag =			HTML
+Zondag =			Javascript versimpelen/opnieuw maken
+Maandag =			CSS afmaken, classes veranderen
+Dinsdag =			PHP
+Woensdag =			PHP
+Donderdag =			Laatste dingen afmaken					Alles controleren				's avonds videomateriaal maken
+Vrijdag =			Video edit																16:00 ingeleverd!
