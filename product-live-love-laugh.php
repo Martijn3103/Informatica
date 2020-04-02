@@ -534,10 +534,7 @@ $query = "SELECT * FROM tbl_product WHERE id=1 ";
 							<h2 class="product-name"><?php echo $row["name"]; ?></h2>
 							<h3 class="product-price">€<?php echo $row["price"]; ?></h3>
 							<p><strong>Collectie:</strong> armbanden</p>
-							<p>Materiaal: stainless steel</p>
-                            <p>Diameter: 6,5 cm / Omtrek: 19 cm / Breedte: 3 mm</p>
-							<p>One size
-							</p>
+							<p>We love bangles! Deze bangle staat super mooi door het smalle model. Op de bangle staat de tekst 'Live Love Laugh', hoe cute! Deze bangle is super mooi om te combineren met een mooi horloge en verschillende armbanden voor een complete armparty!</p>
 							<div class="product-options">
 								<ul class="size-option">
 									<li><span class="text-uppercase">Soort:</span></li>
@@ -574,7 +571,12 @@ $query = "SELECT * FROM tbl_product WHERE id=1 ";
 							</ul>
 							<div class="tab-content">
 								<div id="tab1" class="tab-pane fade in active">
-									<p>We love bangles! Deze bangle staat super mooi door het smalle modelletje. Op de bangle staat de tekst 'Live Love Laugh'. hoe cute! Deze bangle is super mooi om te combineer met een mooi horloge en verschillende armbandjes voor een complete armparty!</p>
+									
+								<p>Materiaal: stainless steel.<br>
+                            Diameter: 6,5 cm / Omtrek: 19 cm / Breedte: 3 mm.<br>
+							One size.<br>
+							Zelfgemaakt in Nederland.
+							</p>
 								</div>
 							</div>
 						</div>
@@ -631,6 +633,7 @@ $query = "SELECT * FROM tbl_product WHERE id=1 ";
 							<li><a href="#">Retourneren</a></li>
 							<li><a href="#">Hoe verzenden wij onze producten?</a></li>
 							<li><a href="#">FAQ</a></li>
+							<li><a href="contact-form.php">*Contactformulier*</a></li>
 						</ul>
 					</div>
 				</div>
@@ -645,7 +648,7 @@ $query = "SELECT * FROM tbl_product WHERE id=1 ";
 							<div class="form-group">
 								<input class="input" placeholder="Vul hier uw email adres in.">
 							</div>
-							<button class="blauwe-btn">*Ja, ik wil graag de nieuwsbrief ontvangen.*</button>
+							<button class="blauwe-btn">Ja, ik wil graag de nieuwsbrief ontvangen.</button>
 						</form>
 					</div>
 				</div>
