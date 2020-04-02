@@ -118,7 +118,7 @@ if(isset($_GET["action"]))
 							<ul class="custom-menu">
 								<li><a href="#"><i class="fa fa-user-o"></i> Mijn account</a></li>
 								<li><a href="afrekenen.php"><i class="fa fa-check"></i> *Afrekenen*</a></li>
-								<li><a href="#"><i class="fa fa-user-plus"></i> Een account aanmaken</a></li>
+								<li><a href="#"><i class="fa fa-user-plus"></i> *Een account aanmaken*</a></li>
 							</ul>
 						</li>
 						<!-- /Account -->
