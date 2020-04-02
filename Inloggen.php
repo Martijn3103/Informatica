@@ -134,7 +134,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 					</div>
 				</div>
 
-
 						<!-- Mobiel nav-->
 						<li class="nav-toggle">
 							<button class="nav-toggle-btn main-btn icon-btn"><i class="fa fa-bars"></i></button>

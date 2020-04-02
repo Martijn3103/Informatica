@@ -118,18 +118,17 @@ if(isset($_GET["action"]))
 							<ul class="custom-menu">
 								<li><a href="#"><i class="fa fa-user-o"></i> Mijn account</a></li>
 								<li><a href="#"><i class="fa fa-check"></i> *Afrekenen*</a></li>
-								<li><a href="#"><i class="fa fa-user-plus"></i> Een account aanmaken</a></li>
+								<li><a href="registreren.php"><i class="fa fa-user-plus"></i> *Een account aanmaken*</a></li>
 							</ul>
 						</li>
 						<!-- /Account -->
 
 						<!-- Winkelwagen -->
-						<li class="header-cart dropdown default-dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+							<li class="header-cart">
 								<div class="header-btns-icon">
 									<i class="fa fa-shopping-cart"></i>
 								</div>
-								<strong class="text-uppercase">*Winkelmandje:*</strong>
+								<strong class="text-uppercase"><a href="afrekenen.php">*Winkelmandje:*</a></strong>
 								<br>
 								
 									<?php
@@ -196,7 +195,7 @@ if(isset($_GET["action"]))
 											<li><a href="#">Zilveren bedelarmbanden</a></li>
 											<li><a href="#">Aluminium bedelarmbanden</a></li>
 											<li><a href="#">Messing bedelarmbanden</a></li>
-											<li><a href="#">Suikerpot-collectie</a></li>
+											<li><a href="producten-suikerpot-armbanden.php">*Suikerpot-collectie*</a></li>
 											<li><a href="#">Leren armbanden</a></li>
 										</ul>
 									</div>
@@ -424,7 +423,7 @@ if(isset($_GET["action"]))
 											<li><a href="#">Zilveren bedelarmbanden</a></li>
 											<li><a href="#">Aluminium bedelarmbanden</a></li>
 											<li><a href="#">Messing bedelarmbanden</a></li>
-											<li><a href="#">*Suikerpot-collectie*</a></li>
+											<li><a href="producten-suikerpot-armbanden.php">*Suikerpot-collectie*</a></li>
 											<li><a href="#">Leren armbanden</a></li>
 										</ul>
 									</div>
@@ -442,7 +441,7 @@ if(isset($_GET["action"]))
 											<li>
 												<h3 class="list-links-title">Ringen</h3></li>
 											<li><a href="#">Gouden ring</a></li>
-											<li><a href="#">*Zilveren ring*</a></li>
+											<li><a href="producten-ringen.php">*Zilveren ring*</a></li>
 											<li><a href="#">Aluminium ring</a></li>
 										</ul>
 									</div>
@@ -557,8 +556,10 @@ $query = "SELECT * FROM tbl_product WHERE id=2 ";
 							<h2 class="product-name"><?php echo $row["name"]; ?></h2>
 							<h3 class="product-price sand-color">€ <?php echo $row["price"]; ?></h3><h3><del class="product-old-price"> <?php echo number_format((float)$row["price"]/80*100 , 2,); ?> </del></h3>
 							<p><strong>Collectie:</strong> Armbanden</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-								dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>kleur: Goud</p>
+							<p>Materiaal: stainless steel </p>
+                            <p>De bangle is 3 mm breed en heeft een diameter van 6 cm</p>
+							<p>One size</p>
 							<div class="product-options">
 								<ul class="size-option">
 									<li><span class="text-uppercase">Soort:</span></li>
@@ -594,8 +595,7 @@ $query = "SELECT * FROM tbl_product WHERE id=2 ";
 							</ul>
 							<div class="tab-content">
 								<div id="tab1" class="tab-pane fade in active">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-										irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<p>Bangles, wij houden ervan! Deze bangle komt uit onze Moon Collection en op de bangle staat ‘Love you to the moon & back’ gegrafeerd. Maak jouw armparty helemaal compleet door deze bangle te combineren met de leuke armbandjes uit de collectie.</p>
 								</div>
 							</div>
 						</div>

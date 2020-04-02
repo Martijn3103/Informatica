@@ -101,7 +101,7 @@ if(isset($_POST["add_to_cart"]))
 							<ul class="custom-menu">
 								<li><a href="#"><i class="fa fa-user-o"></i> Mijn account</a></li>
 								<li><a href="afrekenen.php"><i class="fa fa-check"></i> *Afrekenen*</a></li>
-								<li><a href="#"><i class="fa fa-user-plus"></i> Een account aanmaken</a></li>
+								<li><a href="#"><i class="fa fa-user-plus"></i> *Een account aanmaken*</a></li>
 							</ul>
 						</li>
 						<!-- /Account -->
@@ -533,13 +533,15 @@ $query = "SELECT * FROM tbl_product WHERE id=1 ";
 						<div class="product-body">
 							<h2 class="product-name"><?php echo $row["name"]; ?></h2>
 							<h3 class="product-price">€<?php echo $row["price"]; ?></h3>
-							<p><strong>Collectie:</strong> Ringen</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-								dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p><strong>Collectie:</strong> armbanden</p>
+							<p>Materiaal: stainless steel</p>
+                            <p>Diameter: 6,5 cm / Omtrek: 19 cm / Breedte: 3 mm</p>
+							<p>One size
+							</p>
 							<div class="product-options">
 								<ul class="size-option">
 									<li><span class="text-uppercase">Soort:</span></li>
-									<li class="active"><a href="#">Zilver</a></li>
+									<li class="active"><a href="#">Goud</a></li>
 								
 								</ul>
 							</div>
@@ -572,8 +574,7 @@ $query = "SELECT * FROM tbl_product WHERE id=1 ";
 							</ul>
 							<div class="tab-content">
 								<div id="tab1" class="tab-pane fade in active">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicin lit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-										irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									<p>We love bangles! Deze bangle staat super mooi door het smalle modelletje. Op de bangle staat de tekst 'Live Love Laugh'. hoe cute! Deze bangle is super mooi om te combineer met een mooi horloge en verschillende armbandjes voor een complete armparty!</p>
 								</div>
 							</div>
 						</div>

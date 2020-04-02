@@ -67,7 +67,7 @@ $connect = mysqli_connect("localhost", "root", "", "testing");
 							<ul class="custom-menu">
 								<li><a href="#"><i class="fa fa-user-o"></i> Mijn account</a></li>
 								<li><a href="afrekenen.php"><i class="fa fa-check"></i> *Afrekenen*</a></li>
-								<li><a href="#"><i class="fa fa-user-plus"></i> Een account aanmaken</a></li>
+								<li><a href="registreren.php"><i class="fa fa-user-plus"></i> *Een account aanmaken*</a></li>
 							</ul>
 						</li>
 						<!-- /Account -->
@@ -483,7 +483,6 @@ $connect = mysqli_connect("localhost", "root", "", "testing");
 										<h2 class="product-name"><a href="product-ring.php">*Ocean Wave*</a></h2>
 										<div class="product-btns">
 
-											<button class="blauwe-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Toevoegen aan winkelmandje</button>
 										</div>
 									</div>
 								</div>
@@ -503,7 +502,6 @@ $connect = mysqli_connect("localhost", "root", "", "testing");
 										<h2 class="product-name"><a href="#">Ring Knot</a></h2>
 										<div class="product-btns">
 
-											<button class="blauwe-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Toevoegen aan winkelmandje</button>
 										</div>
 									</div>
 								</div>
@@ -529,7 +527,6 @@ $connect = mysqli_connect("localhost", "root", "", "testing");
 										<h2 class="product-name"><a href="#">Ring met steen</a></h2>
 										<div class="product-btns">
 
-											<button class="blauwe-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Toevoegen aan winkelmandje</button>
 										</div>
 									</div>
 								</div>
@@ -554,7 +551,6 @@ $connect = mysqli_connect("localhost", "root", "", "testing");
 										<h2 class="product-name"><a href="#">Ring met steen</a></h2>
 										<div class="product-btns">
 
-											<button class="blauwe-btn add-to-cart"><i class="fa fa-shopping-cart"></i> Toevoegen aan winkelmandje</button>
 										</div>
 									</div>
 								</div>
