@@ -1,7 +1,0 @@
-Screenshots virtual machine chrome
-	- iphone 5 met border, voor oude vibes
-
-
-Uitleggen wat we hebben gebruikt en hoe 
-	- css, html, php, js
-		- slick, font awesome, bootstrap, etc.

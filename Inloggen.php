@@ -554,7 +554,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 							<li><a href="#">Retourneren</a></li>
 							<li><a href="#">Hoe verzenden wij onze producten?</a></li>
 							<li><a href="#">FAQ</a></li>
-						
+
 						</ul>
 					</div>
 				</div>

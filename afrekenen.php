@@ -513,7 +513,7 @@ if(isset($_GET["action"]))
 				<form id="checkout-form" class="clearfix">
 					<div class="col-md-6">
 						<div class="billing-details">
-							<p>Heeft u al een account? <a href="#">Login</a></p>
+							<p>Heeft u al een account? <a href="inloggen.php">*Login*</a></p>
 							<div class="section-title">
 								<h3 class="title">Verzendinformatie</h3>
 							</div>
@@ -568,7 +568,14 @@ if(isset($_GET["action"]))
 							</div>
 						</div>
 					</div>
-
+<?php
+if(!empty($_SESSION["shopping_cart"]))
+					{
+						$total = 0;
+						foreach($_SESSION["shopping_cart"] as $keys => $values)
+						{
+					?>
+							
 					<div class="col-md-12">
 						<div class="order-summary clearfix">
 							<div class="section-title">
@@ -585,14 +592,7 @@ if(isset($_GET["action"]))
 										<th class="text-right">Item verwijderen?</th>
 									</tr>
 								</thead>
-								<?php
-if(!empty($_SESSION["shopping_cart"]))
-					{
-						$total = 0;
-						foreach($_SESSION["shopping_cart"] as $keys => $values)
-						{
-					?>
-								
+									
 								<tbody>
 
 
@@ -718,7 +718,7 @@ if(!empty($_SESSION["shopping_cart"]))
 							<li><a href="#">Retourneren</a></li>
 							<li><a href="#">Hoe verzenden wij onze producten?</a></li>
 							<li><a href="#">FAQ</a></li>
-							
+
 						</ul>
 					</div>
 				</div>

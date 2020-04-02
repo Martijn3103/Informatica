@@ -640,7 +640,7 @@ $query = "SELECT * FROM tbl_product WHERE id=4 ";
 							<li><a href="#">Retourneren</a></li>
 							<li><a href="#">Hoe verzenden wij onze producten?</a></li>
 							<li><a href="#">FAQ</a></li>
-						
+
 						</ul>
 					</div>
 				</div>

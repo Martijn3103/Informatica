@@ -82,8 +82,7 @@ $connect = mysqli_connect("localhost", "root", "", "testing");
 								<br>
 								
 									<?php
-					
-						$total = 0;
+    						$total = 0;
 						foreach($_SESSION["shopping_cart"] as $keys => $values)
 						{
 												
@@ -578,7 +577,7 @@ $connect = mysqli_connect("localhost", "root", "", "testing");
 							<li><a href="#">Retourneren</a></li>
 							<li><a href="#">Hoe verzenden wij onze producten?</a></li>
 							<li><a href="#">FAQ</a></li>
-						
+
 						</ul>
 					</div>
 				</div>

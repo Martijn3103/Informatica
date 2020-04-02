@@ -1,8 +1,0 @@
-Col-md, col-xs etc :
-
-Cijfer aanpassen dat erbij hoort 
-	Zowel in CSS als in html
-
-
-products 
-Verkleinen grid

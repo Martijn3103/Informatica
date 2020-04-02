@@ -567,7 +567,7 @@ $query = "SELECT * FROM tbl_product WHERE id=5 ";
 								<span class="sale">-40%</span>
 							</div>
 							<h2 class="product-name"><?php echo $row["name"]; ?></h2>
-							<h3 class="product-price sand-color">€ <?php echo $row["price"]; ?></h3><h3><del class="product-old-price"> <?php echo number_format((float)$row["price"]/60*100 +0.03, 2,); ?> </del></h3>
+							<h3 class="product-price sand-color">€ <?php echo $row["price"]; ?></h3><h3><del class="product-old-price">€ <?php echo number_format((float)$row["price"]/60*100 +0.03, 2,); ?> </del></h3>
 							<p><strong>Collectie:</strong> Kettingen</p>
 							<p>Op deze prachtige ketting staat een uniek symbool dat alles te maken heeft met de zee. Het symbool is in een egale ronde hanger gegraveerd. Door de ketting heb je de zee altijd dicht bij je!</p>
 							<div class="product-options">
@@ -668,7 +668,7 @@ $query = "SELECT * FROM tbl_product WHERE id=5 ";
 							<li><a href="#">Retourneren</a></li>
 							<li><a href="#">Hoe verzenden wij onze producten?</a></li>
 							<li><a href="#">FAQ</a></li>
-							
+
 						</ul>
 					</div>
 				</div>
