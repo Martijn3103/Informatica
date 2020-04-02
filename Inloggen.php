@@ -1,3 +1,92 @@
+<?php 
+session_start();
+ 
+
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+  header("location: inlogklaar.php");
+  exit;
+}
+ 
+
+require_once "configlogin.php";
+ 
+
+$username = $password = "";
+$username_err = $password_err = "";
+ 
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+ 
+
+    if(empty(trim($_POST["username"]))){
+        $username_err = "Er is geen gebruikersnaam ingevuld.";
+    } else{
+        $username = trim($_POST["username"]);
+    }
+    
+
+    if(empty(trim($_POST["password"]))){
+        $password_err = "Er is geen wachtwoord ingevuld";
+    } else{
+        $password = trim($_POST["password"]);
+    }
+    
+
+    if(empty($username_err) && empty($password_err)){
+
+        $sql = "SELECT id, username, password FROM users WHERE username = ?";
+        
+        if($stmt = mysqli_prepare($link, $sql)){
+
+            mysqli_stmt_bind_param($stmt, "s", $param_username);
+            
+
+            $param_username = $username;
+            
+
+            if(mysqli_stmt_execute($stmt)){
+
+                mysqli_stmt_store_result($stmt);
+                
+
+                if(mysqli_stmt_num_rows($stmt) == 1){                    
+
+                    mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
+                    if(mysqli_stmt_fetch($stmt)){
+                        if(password_verify($password, $hashed_password)){
+
+                            session_start();
+                            
+
+                            $_SESSION["loggedin"] = true;
+                            $_SESSION["id"] = $id;
+                            $_SESSION["username"] = $username;                            
+                            
+
+                            header("location: inlogklaar.php");
+                        } else{
+
+                            $password_err = "Deze gebruikersnaam/wachtwoord combinatie is onbekend.";
+                        }
+                    }
+                } else{
+
+                    $username_err = "Deze gebruikersnaam/wachtwoord combinatie is onbekend.";
+                }
+            } else{
+                echo "Er is iets mis gegaan. Probeer het op een later moment opnieuw.";
+            }
+
+            mysqli_stmt_close($stmt);
+        }
+    }
+    
+    mysqli_close($link);
+}
+?>
+
+?>
+
 <!DOCTYPE html>
 
 <head>
@@ -24,59 +113,27 @@
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
-
+	
 </head>
 
 <body>
-<!-- header -->
+	<!-- header -->
 	<header>
-				<div id="header">
+		<div id="header">
 			<div class="container">
 				<div class="pull-left">
 					<div class="header-logo">
-						<a class="logo" href="index.html">
+						<a class="logo" href="index.php">
 							<img src="./img/logo.png" alt="logo">
 						</a>
 					</div>
 					<div class="header-logo2">
-						<a class="logo" href="index.html">
+						<a class="logo" href="index.php">
 							<img src="./img/logo2.png" alt="logo">
 						</a>
 					</div>
 				</div>
 
-				<div class="pull-right">
-					<ul class="header-btns">
-						
-						<!-- Account -->
-						<li class="header-account dropdown default-dropdown">
-							<div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
-								<div class="header-btns-icon">
-									<i class="fa fa-user-o"></i>
-								</div>
-								<strong class="text-uppercase">*Mijn account* <i class="fa fa-caret-down"></i></strong>
-							</div>
-							<span<Li><a href="Inloggen.htlm" class="text-uppercase">*Login*</a></Li></span>
-							
-							
-							<ul class="custom-menu">
-								<li><a href="#"><i class="fa fa-user-o"></i> Mijn account</a></li>
-								<li><a href="afrekenen.html"><i class="fa fa-check"></i> *Afrekenen*</a></li>
-								<li><a href="#"><i class="fa fa-user-plus"></i> Een account aanmaken</a></li>
-							</ul>
-						</li>
-						<!-- /Account -->
-
-						<!-- Winkelwagen -->
-						<li class="header-cart">
-								<div class="header-btns-icon">
-									<i class="fa fa-shopping-cart"></i>
-								</div>
-								<strong class="text-uppercase"><a href="afrekenen.html">*Winkelmandje:*</a></strong>
-								<br>
-								<span>*€35,20*</span>
-						</li>
-						<!-- /Winkelmandje -->
 
 						<!-- Mobiel nav-->
 						<li class="nav-toggle">
@@ -119,7 +176,7 @@
 											<li><a href="#">Zilveren bedelarmbanden</a></li>
 											<li><a href="#">Aluminium bedelarmbanden</a></li>
 											<li><a href="#">Messing bedelarmbanden</a></li>
-											<li><a href="producten-suikerpot-armbanden.html">*Suikerpot-collectie*</a></li>
+											<li><a href="producten-suikerpot-armbanden.php">*Suikerpot-collectie*</a></li>
 											<li><a href="#">Leren armbanden</a></li>
 										</ul>
 									</div>
@@ -127,7 +184,7 @@
 								<div class="row hidden-sm hidden-xs">
 									<div class="SMmd-12">
 										<hr>
-										<a class="banner banner-1" href="producten-suikerpot-armbanden.html">
+										<a class="banner banner-1" href="producten-suikerpot-armbanden.php">
 											<img src="./img/banner05.jpg" alt="">
 											<div class="banner-caption text-center">
 												<h2 class="black-color">NIEUWE COLLECTIE</h2>
@@ -148,7 +205,7 @@
 											<li>
 												<h3 class="list-links-title">Zilveren kettingen</h3></li>
 											<li><a href="#">Zilveren ketting met grote bedel</a></li>
-											<li><a href="producten-kettingen.html">*Zilveren ketting met middelgrote bedel*</a></li>
+											<li><a href="producten-kettingen.php">*Zilveren ketting met middelgrote bedel*</a></li>
 											<li><a href="#">Zilveren ketting met kleine bedel</a></li>
 											<li><a href="#">Zilveren ketting zonder bedel</a></li>
 										</ul>
@@ -193,7 +250,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href="producten-ringen.html">*Ringen*</a></li>
+						<li><a href="producten-ringen.php">*Ringen*</a></li>
 						<li class="dropdown side-dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Custom made hangers <i class="fa fa-angle-right"></i></a>
 							<div class="custom-menu">
@@ -279,7 +336,7 @@
 				<div class="menu-nav">
 					<span class="menu-header">Heren of Dames? <i class="fa fa-bars"></i></span>
 					<ul class="menu-list">
-						<li><a href="index.html">*Home*</a></li>
+						<li><a href="index.php">*Home*</a></li>
 						<li class="dropdown mega-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Heren <i class="fa fa-caret-down"></i></a>
 							<div class="custom-menu">
 								<div class="row">
@@ -347,7 +404,7 @@
 											<li><a href="#">Zilveren bedelarmbanden</a></li>
 											<li><a href="#">Aluminium bedelarmbanden</a></li>
 											<li><a href="#">Messing bedelarmbanden</a></li>
-											<li><a href="producten-suikerpot-armbanden.html">*Suikerpot-collectie*</a></li>
+											<li><a href="producten-suikerpot-armbanden.php">*Suikerpot-collectie*</a></li>
 											<li><a href="#">Leren armbanden</a></li>
 										</ul>
 									</div>
@@ -365,7 +422,7 @@
 											<li>
 												<h3 class="list-links-title">Ringen</h3></li>
 											<li><a href="#">Gouden ring</a></li>
-											<li><a href="producten-ringen.html">*Zilveren ring*</a></li>
+											<li><a href="producten-ringen.php">*Zilveren ring*</a></li>
 											<li><a href="#">Aluminium ring</a></li>
 										</ul>
 									</div>
@@ -424,7 +481,7 @@
 	<div id="breadcrumb">
 		<div class="container">
 			<ul class="breadcrumb">
-				<li><a href="index.html">*Home*</a></li>
+				<li><a href="index.php">*Home*</a></li>
 				<li class="active">Inloggen</li>
 			</ul>
 		</div>
@@ -437,23 +494,22 @@
 		<div class="container">
 			<!-- row -->
 			<div class="row">
-				<form id="checkout-form" class="clearfix">
-					<div class="col-md-6">
-						<div class="billing-details">
-							<div class="section-title">
-								<h3 class="title">Inloggen</h3>
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="E-mail" placeholder="E-mail">
-							</div>
-							<div class="form-group">
-								<input class="input" type="text" name="Wachtwoord" placeholder="Wachtwoord">
-							</div>
-							<button class="blauwe-btn add-to-cart"> Inloggen </button>
-						</div>
-					</div>	
-					</div>
-				</form>
+				<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                <label>Gebruikersnaam:</label>
+                <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
+                <span class="help-block"><?php echo $username_err; ?></span>
+            </div>    
+            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                <label>Wachtwoord:</label>
+                <input type="password" name="password" class="form-control">
+                <span class="help-block"><?php echo $password_err; ?></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="blauwe-btn" value="Login">
+            </div>
+            <p>Heeft u nog geen account? <a href="registreren.php"><b>Registreren</b></a>.</p>
+        </form>
 			</div>
 			<!-- /row -->
 		</div>
@@ -472,7 +528,7 @@
 					<div class="footer">
 						<!-- footer logo -->
 						<div class="footer-logo">
-							<a class="logo" href="index.html">
+							<a class="logo" href="index.php">
 		            <img src="./img/logo-footer.png" alt="">
 		          </a>
 						</div>
