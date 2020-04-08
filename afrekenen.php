@@ -568,13 +568,7 @@ if(isset($_GET["action"]))
 							</div>
 						</div>
 					</div>
-<?php
-if(!empty($_SESSION["shopping_cart"]))
-					{
-						$total = 0;
-						foreach($_SESSION["shopping_cart"] as $keys => $values)
-						{
-					?>
+
 							
 					<div class="col-md-12">
 						<div class="order-summary clearfix">
@@ -594,7 +588,13 @@ if(!empty($_SESSION["shopping_cart"]))
 								</thead>
 									
 								<tbody>
-
+<?php
+if(!empty($_SESSION["shopping_cart"]))
+					{
+						$total = 0;
+						foreach($_SESSION["shopping_cart"] as $keys => $values)
+						{
+					?>
 
 									<tr>
 											<td class="thumb"></td>
